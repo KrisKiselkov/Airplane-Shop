@@ -1,38 +1,186 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  height: 1000px;
+  color: #181818;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: transparent;
+  height: 90px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.082);  
+  z-index: 500;
+  transition: all .2s ease-in-out;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header.sticky {
+  background-color: #eeeeee;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#logo {
+  width: 120px;
+  position: relative;
+  top: -1em;
+  left: 2em;
+  transition: left .3s ease-out;
+}
+
+#nav-list {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  float: right;
+  position: relative;
+  top: .8em;
+  right: 29em;
+  list-style: none;
+  transition: right .3s ease-out;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-a {
+  margin-right: 50px;
+  text-decoration: none;
+  color: #181818;
+  font-size: 20px;
+  font-weight: 500;
+  transition: color .2s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#basket {
+  position: relative;
+  float: right;
+  top: 1.8em;
+  left: 19.5em;
+  transition: all .3s;
 }
+
+#nav-list a:hover {
+  color: #3d3d3dc2;
+}
+
+#landing-hero {
+  position: relative;
+  height: 37.3em;
+  background: linear-gradient(to bottom, #fff, #eeeeee);
+  box-shadow: 0px 10px 10px 0px #eeeeee;
+}
+
+#title {
+  position: relative;
+  top: 2em;
+  left: 1.5em;
+  font-size: 60px;
+  width: 7em;
+  letter-spacing: 2px;
+}
+
+#title span {
+  text-transform: uppercase;
+  background: linear-gradient(to right, #1644cc, #61b0fb);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+#short-desc {
+  position: relative;
+  top: 7.5em;
+  left: 6em;
+  width: 25em;
+  background-color: #e9e9e9;
+  border-radius: 12px;
+}
+
+#short-desc p {
+  position: relative;
+  padding: .6em 1.2em;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 25px;
+  letter-spacing: .7px;
+}
+
+#landing-con {
+  position: relative;
+  top: 8.2em;
+  left: 6em;
+  width: 9em;
+  height: 3.8em;
+  background: #1644cc;
+  border: none;
+  box-shadow: -4px 6px 0px 0px #61b0fb;
+  border-radius: 12px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+  transition: all .2s;
+  cursor: pointer;
+}
+
+#landing-con:active {
+  box-shadow: none;
+  transform:translate(-4px, 5px);
+}
+
+#plane {
+  position: relative;
+  float: right;
+  right: 3em;
+  bottom: 6em;
+  width: 43em;
+  rotate: 10deg;
+}
+
+
+#brief-hero {
+  display: flex;
+  position: relative;
+  width: 82%;
+  margin: 0 auto;
+}
+
+.icons {
+  border-radius: 12px;
+  padding: 1.5em 1.6em;
+  background-color: #1644cc;
+}
+
+.icon-block {
+  display: flex;
+  position: relative;
+  background-color: #d6d6d6;
+}
+
+.desc-box h3 {
+  position: relative;
+  left: .7em;
+  top: -1.1em;
+  font-size: 23px;
+}
+
+.desc-box p {
+  position: relative;
+  top: -2.7em;
+  left: 1em;
+  width: 12em;
+}
+
+.support {
+  position: relative;
+  left: 6.8em;
+}
+
+.sup {
+  position: relative;
+  left: 6.8em;
+}
+
+.delivery {
+  position: relative;
+  left: 13.8em;
+}
+.del {
+  position: relative;
+  left: 13.8em;
+}
+
