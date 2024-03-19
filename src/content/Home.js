@@ -1,4 +1,4 @@
-import plane from '../plane.png'
+import plane from './images/plane.png'
 
 
 export function Home() {
