@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   height: 1000px;
@@ -16,7 +20,7 @@ header {
 }
 
 header.sticky {
-  background-color: #eeeeee;
+  background-color: #cee7ff;
 }
 
 #logo {
@@ -55,7 +59,7 @@ header.sticky {
 }
 
 #nav-list a:hover {
-  color: #3d3d3dc2;
+  color: #1644cc;
 }
 
 #landing-hero {
@@ -86,7 +90,7 @@ header.sticky {
   top: 7.5em;
   left: 6em;
   width: 25em;
-  background-color: #e9e9e9;
+  background-color: #61b0fb3a;
   border-radius: 12px;
 }
 
@@ -184,7 +188,7 @@ header.sticky {
 
 /* MAIN */
 main {
-  height: 1300px;
+  height: 2600px;
   background: linear-gradient(to bottom, #eeeeee,
   #fff);
   box-shadow: 0px -10px 10px 0px #eeeeee;
@@ -192,7 +196,7 @@ main {
 
 #main-h1 {
   position: relative;
-  top: 1.2em;
+  top: 1.5em;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 1.5px;
@@ -215,7 +219,8 @@ main {
 }
 
 .plane-img {
-  width: 100%;
+  width: 15em;
+  height: 9.85em;
   background-color: #61b0fb3a;
   border-radius: 12px;
 }
@@ -259,4 +264,125 @@ main {
 #all-h3:hover {
   text-decoration: none;
   cursor: pointer;
+}
+
+
+/* DESCRIPTION */
+#description {
+  display: flex;
+  position: relative;
+  top: 15em;
+  width: 82%;
+  height: 480px;
+  background-color: #61b0fb3a;
+  margin: 0 auto;
+  border-radius: 22px;
+}
+
+#plane-2 {
+  width: 35em;
+  height: 21em;
+  position: relative;
+  top: 4.8em;
+  rotate: -12deg;
+}
+
+#para-desc { 
+  width: 50%;
+}
+
+#para-desc-h1 {
+  position: relative;
+  top: 1em;
+  left: .9em;
+  font-size: 40px;
+  letter-spacing: 1.3px;
+}
+
+.qa-res {
+  text-transform: uppercase;
+  background: linear-gradient(to right, #1644cc, #61b0fb);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  letter-spacing: normal;
+}
+
+#para-desc-p {
+  position: relative;
+  top: 3em;
+  left: 2.4em;
+  font-size: 18px;
+  width: 24em;
+}
+
+#para-desc button {
+  position: relative;
+  top: 6.8em;
+  left: 5em;
+  width: 9.5em;
+  height: 4.3em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  border: 4px solid #1644cc;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+#primary-btn {
+  color: #fff;
+  background-color: #1644cc;
+  transition: all .2s ease-out;
+}
+
+#secondary-btn {
+  margin-left: 2em;
+  color: #1644cc;
+  background-color: transparent;
+  transition: all .2s ease-out;
+}
+
+#cloud-1 {
+  position: absolute;
+  height: 11em;
+  width: 20em;
+}
+
+#cloud-2 {
+  position: absolute;
+  top: 19em;
+  left: 17em;
+  height: 10.5em;
+  width: 19em;
+}
+
+
+/* TOP SELLERS */
+#best-sell {
+  position: relative;
+  top: 23em;
+  background-color: #eeeeee;
+  width: 100%;
+  height: 31.2em;
+  box-shadow: 0px -10px 10px 0px #eeeeee;
+}
+
+#best-h1 {
+  position: relative;
+  top: 1.5em;
+  font-size: 35px;
+  letter-spacing: .7px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#best-planes {
+  display: flex;
+  gap: 35px;
+  position: relative;
+  top: 4.5em;
+  overflow-y: hidden;
+  overflow-x: auto;
+  width: 80%;
+  margin: 0 auto;
 }
