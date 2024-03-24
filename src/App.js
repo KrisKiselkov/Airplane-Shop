@@ -4,6 +4,7 @@ import { Home } from './content/Home';
 import { Planes } from './content/Planes';
 import { DescriptionHero } from './content/Description-Hero';
 import { Testimonials } from './content/Testimonials';
+import { Newsletter } from './content/Newsletter';
 import './App.css';
 
 
@@ -21,6 +22,8 @@ function App() {
         <DescriptionHero />
 
         <Testimonials />
+
+        <Newsletter />
       </main>
     </>
   );

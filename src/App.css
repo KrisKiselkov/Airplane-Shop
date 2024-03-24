@@ -188,7 +188,7 @@ header.sticky {
 
 /* MAIN */
 main {
-  height: 2800px;
+  height: fit-content;
   background: linear-gradient(to bottom, #eeeeee,
   #fff);
   box-shadow: 0px -10px 10px 0px #eeeeee;
@@ -497,4 +497,76 @@ main {
 
 .swiper-pagination {
   margin-bottom: 1em;
+}
+
+
+/* NEWSLETTER */
+#newsletter {
+  position: relative;
+  top: 19.4em;
+  height: 310px;
+  width: 100%;
+  background-color: #1644cc;
+}
+
+#news-h1 {
+  position: relative;
+  top: 1.2em;
+  color: #fff;
+  text-align: center;
+  font-size: 35px;
+  letter-spacing: .8px;
+}
+
+#sub-container {
+  display: flex;
+  position: relative;
+  top: 4.5em;
+  height: 4em;
+  width: 30em;
+  background-color: #61b0fb;
+  margin: 0 auto;
+  border-radius: 12px;
+}
+
+#sub-container input {
+  margin-top: .3em;
+  height: 80%;
+  width: 66.3%;
+  background-color: transparent;
+  color: #fff;
+  font-size: 20px;
+  padding-left: .7em;
+  border-radius: 12px 0px 0px 12px;
+  border: none;
+  border-right: 2px dashed;
+}
+
+input::placeholder {
+  color: #fff;
+}
+
+input:focus {
+  outline: none;
+}
+
+#inp-btn {
+  position: relative;
+  top: .4em;
+  height: 3.1em;
+  width: 8em;
+  text-transform: uppercase;
+  background-color: #1644cc;
+  border-radius: 9px;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: .7px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+#inp-btn:hover {
+  background-color: #1c54ff;
 }
