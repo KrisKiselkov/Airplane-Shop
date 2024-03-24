@@ -3,6 +3,7 @@ import { Nav } from './content/Nav';
 import { Home } from './content/Home';
 import { Planes } from './content/Planes';
 import { DescriptionHero } from './content/Description-Hero';
+import { Testimonials } from './content/Testimonials';
 import './App.css';
 
 
@@ -18,6 +19,8 @@ function App() {
         <Planes />
 
         <DescriptionHero />
+
+        <Testimonials />
       </main>
     </>
   );
