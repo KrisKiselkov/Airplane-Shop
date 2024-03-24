@@ -4,7 +4,6 @@ html {
 
 body {
   margin: 0;
-  height: 1000px;
   color: #181818;
 }
 
@@ -271,7 +270,7 @@ main {
 #description {
   display: flex;
   position: relative;
-  top: 15em;
+  top: 12em;
   width: 82%;
   height: 480px;
   background-color: #61b0fb3a;
@@ -360,7 +359,7 @@ main {
 /* TOP SELLERS */
 #best-sell {
   position: relative;
-  top: 23em;
+  top: 17em;
   background-color: #eeeeee;
   width: 100%;
   height: 34em;
@@ -391,7 +390,7 @@ main {
 /* TESTIMONIALS */
 .testimonials {
   position: relative;
-  top: 21.2em;
+  top: 17em;
   height: 610px;
   width: 100%;
   background: radial-gradient(circle at 50% 55%, #a1d1ff,#fff);
@@ -503,7 +502,7 @@ main {
 /* NEWSLETTER */
 #newsletter {
   position: relative;
-  top: 19.4em;
+  top: 15.2em;
   height: 310px;
   width: 100%;
   background-color: #1644cc;
@@ -569,4 +568,33 @@ input:focus {
 
 #inp-btn:hover {
   background-color: #1c54ff;
+}
+
+
+/* FOOTER */
+footer {
+  display: flex;
+  position: relative;
+  top: 15.2em;
+  background-color: #181818;
+  color: #fff;
+  height: 400px;
+}
+
+#foo-logo {
+  position: relative;
+  bottom: 3em;
+  left: 3em;
+}
+
+#foo-container {
+  display: flex;
+}
+
+.foo-txt {
+  position: relative;
+  top: 5em;
+  left: 12em;
+  height: 15em;
+  margin-right: 8em;
 }

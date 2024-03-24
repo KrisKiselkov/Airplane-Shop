@@ -5,13 +5,14 @@ import { Planes } from './content/Planes';
 import { DescriptionHero } from './content/Description-Hero';
 import { Testimonials } from './content/Testimonials';
 import { Newsletter } from './content/Newsletter';
+import { Footer } from './content/Footer';
 import './App.css';
 
 
 function App() {
 
   return (
-    <>
+    <body>
       <Nav />
 
       <Home />
@@ -25,7 +26,8 @@ function App() {
 
         <Newsletter />
       </main>
-    </>
+      <Footer />
+    </body>
   );
 }
 
