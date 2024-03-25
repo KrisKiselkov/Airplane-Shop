@@ -1,33 +1,22 @@
 import logo from './logo.svg';
-import { Nav } from './content/Nav';
-import { Home } from './content/Home';
-import { Planes } from './content/Planes';
-import { DescriptionHero } from './content/Description-Hero';
-import { Testimonials } from './content/Testimonials';
-import { Newsletter } from './content/Newsletter';
-import { Footer } from './content/Footer';
+import { Landing } from './content/Landing';
+import { Airbus } from './airbus/Airbus';
 import './App.css';
+import { RouterProvider, Route } from 'react-router-dom';
+import { createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
 
+
+const router = createBrowserRouter(createRoutesFromElements(
+  <Route>
+    <Route path='/' element={ <Landing /> }/>
+    <Route path='/airbus' element={ <Airbus/> }/>
+  </Route>
+    ));
 
 function App() {
 
   return (
-    <body>
-      <Nav />
-
-      <Home />
-
-      <main>
-        <Planes />
-
-        <DescriptionHero />
-
-        <Testimonials />
-
-        <Newsletter />
-      </main>
-      <Footer />
-    </body>
+    <RouterProvider router={router} />
   );
 }
 
