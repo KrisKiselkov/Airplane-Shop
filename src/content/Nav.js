@@ -1,4 +1,5 @@
 import logo from '../logo.png'
+import { NavLink } from 'react-router-dom';
 
 export function Nav() {
     window.addEventListener('scroll', () => {
@@ -21,8 +22,8 @@ export function Nav() {
                 <nav>
                 <img src={logo} alt="logo" id="logo"></img>
                     <ul id="nav-list">
-                        <a href="#" className='nav-a'><li>Home</li></a>
-                        <a href="#" className='nav-a'><li>Airbus</li></a>
+                        <NavLink to={'/'} className='nav-a'><li>Home</li></NavLink>
+                        <NavLink to={'/airbus'} className='nav-a'><li>Airbus</li></NavLink>
                         <a href="#" className='nav-a'><li>Boeing</li></a>
                         
                     </ul>
