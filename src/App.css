@@ -351,7 +351,7 @@ main {
 
 #para-desc-h1 {
   position: relative;
-  top: 1em;
+  top: .5em;
   left: .9em;
   font-size: 40px;
   letter-spacing: 1.3px;
@@ -367,7 +367,7 @@ main {
 
 #para-desc-p {
   position: relative;
-  top: 3em;
+  top: 1.16em;
   left: 2.4em;
   font-size: 18px;
   width: 24em;
@@ -375,7 +375,7 @@ main {
 
 #para-desc button {
   position: relative;
-  top: 6.8em;
+  top: 4em;
   left: 5em;
   width: 9.5em;
   height: 4.3em;
@@ -657,4 +657,28 @@ footer {
   left: 12em;
   height: 15em;
   margin-right: 8em;
+}
+
+
+/* PLANE PAGE */
+#plane-page {
+  display: flex;
+  position: relative;
+  top: 5.6em;
+  margin: 0 auto;
+  width: 90%;
+  height: 800px;
+}
+
+#image-container {
+  width: 50%;
+}
+
+#plane-page-img {
+  width: 600px;
+}
+
+#description-container {
+  width: 50%;
+  background-color: #1644cc;
 }
