@@ -274,6 +274,11 @@ main {
 
 .plane-card {
   width: 15em;
+  color: #181818;
+}
+
+.link {
+  text-decoration: none;
 }
 
 .plane-img {
@@ -308,8 +313,6 @@ main {
 .plane-desc {
   width: 100%; 
   margin-top: -4px;
-  border-radius: 0px 0px 12px 12px;
-  padding-bottom: 1px;
 }
 
 #all-h3 {
@@ -664,10 +667,10 @@ footer {
 #plane-page {
   display: flex;
   position: relative;
-  top: 5.6em;
+  top: 6.5em;
   margin: 0 auto;
   width: 90%;
-  height: 800px;
+  height: 410px;
 }
 
 #image-container {
@@ -675,10 +678,98 @@ footer {
 }
 
 #plane-page-img {
+  position: relative;
+  top: 2em;
   width: 600px;
 }
 
 #description-container {
   width: 50%;
+  border-radius: 14px;
+  background-color: #61b0fb3a;
+}
+
+#desc-content {
+  position: relative;
+  left: 1.6em;
+}
+
+#plane-page-h1 {
+  text-transform: uppercase;
+  letter-spacing: .7px;
+  margin-bottom: -.5em;
+}
+
+#plane-page-h2 {
+  font-size: 28px;
+}
+
+#plane-page-h3 {
+  position: relative;
+  top: .7em;
+}
+
+#plane-page-Mp {
+  width: 75%;
+}
+
+#plane-page-ul {
+  margin-top: -1.3em;
+  margin-left: -1.2em;
+}
+
+#plane-page-ul li {
+  line-height: 20px;
+  font-size: 17px;
+}
+
+::marker {
+  color: #1644cc;
+  font-size: 24px;
+}
+
+.plane-btn {
+  position: relative;
+  left: 12.5em;
+  bottom: 4em;
+  width: 9em;
+  height: 3em;
+  border: 3px solid #1644cc;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 12px;
+}
+
+.plane-page-primaryB {
   background-color: #1644cc;
+  color: #fff;
+  margin-right: 1em;
+}
+
+.plane-page-secondB {
+  background-color: transparent;
+  color: #1644cc;
+}
+
+/* Alternatives */
+#plane-page-alt {
+  position: relative;
+  top: 9em;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#plane-page-alt h2 {
+  margin-left: 1em;
+}
+
+#alt-container {
+  position: relative;
+  padding-top: 2em;
+  display: flex;
+  justify-content: space-around;
+  background-color: #61b0fb3a;
+  height: 315px;
+  border-radius: 12px;
 }

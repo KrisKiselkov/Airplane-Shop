@@ -5,10 +5,13 @@ export function DescriptionHero() {
     const bestPlanes = [
         {
             image: plane,
+            fullType: 'Boeing 737-800',
             type: 'B737-800',
             brand: 'Boeing',
+            description: ['Lorem ipsum aliqua magna sit amet ver dolor.Lorem ipsum aliqua magna sit amet ver dolor.' ,'4 years', '34m x 40m', '197 pax'],
             price: '$ 120,000,000',
-            alt: 'B737'
+            alt: 'B737',
+            id: 737
         },
         {
             image: plane,
