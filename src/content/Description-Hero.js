@@ -1,5 +1,6 @@
 import plane from './images/plane-2.png';
 import cloud from './images/clouds.png'
+import { Link } from 'react-router-dom';
 
 export function DescriptionHero() {
     const bestPlanes = [
@@ -15,10 +16,13 @@ export function DescriptionHero() {
         },
         {
             image: plane,
+            fullType: 'Airbus A320-300',
             type: 'A320-300',
             brand: 'Airbus',
+            description: ['Lorem ipsum aliqua magna sit amet ver dolor.Lorem ipsum aliqua magna sit amet ver dolor.' ,'4 years', '34m x 40m', '197 pax'],
             price: '$ 135,000,000',
-            alt: 'A320'
+            alt: 'A320',
+            id: 320
         },
         {
             image: plane,
@@ -30,16 +34,22 @@ export function DescriptionHero() {
         {
             image: require('./images/plane.jpg') ,
             type: 'A380-800',
+            fullType: 'Airbus A380-800',
             brand: 'Airbus',
+            description: ['Lorem ipsum aliqua magna sit amet ver dolor.Lorem ipsum aliqua magna sit amet ver dolor.' ,'4 years', '34m x 40m', '197 pax'],
             price: '$ 445,000,000',
-            alt: 'A380'
+            alt: 'A380',
+            id: 380
         },
         {
             image: plane,
+            fullType: 'Boeing 747-800',
             type: 'B747-800',
+            description: ['Lorem ipsum aliqua magna sit amet ver dolor.Lorem ipsum aliqua magna sit amet ver dolor.' ,'4 years', '34m x 40m', '197 pax'],
             brand: 'Boeing',
             price: '$ 420,000,000',
-            alt: 'B747'
+            alt: 'B747',
+            id: 747
         },
       ];
 
@@ -88,14 +98,14 @@ export function DescriptionHero() {
                 <h1 id='best-h1'>Best Sellers</h1>
                 <div id='best-planes'>
                     {bestPlanes.map((plane) => (
-                        <div className='plane-card'>
-                            <img src={plane.image} className='plane-img' alt={plane.alt}></img>
-                            <div className='plane-desc'>
-                                <h3 className='plane-type'>{plane.type}</h3>
-                                <p className='plane-brand'>{plane.brand}</p>
-                                <h4 className='plane-price'>{plane.price}</h4>
-                            </div>
+                        <Link to={`/${plane.id}`} className='link'><div className='plane-card'>
+                        <img src={plane.image} className='plane-img' alt={plane.alt}></img>
+                        <div className='plane-desc'>
+                            <h3 className='plane-type'>{plane.type}</h3>
+                            <p className='plane-brand'>{plane.brand}</p>
+                            <h4 className='plane-price'>{plane.price}</h4>
                         </div>
+                    </div></Link>
                     ))}
                 </div>
             </section>
