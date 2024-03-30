@@ -1,57 +1,11 @@
 import plane from './images/plane-2.png';
 import cloud from './images/clouds.png'
 import { Link } from 'react-router-dom';
+import { planesObject } from './Planes';
 
 export function DescriptionHero() {
-    const bestPlanes = [
-        {
-            image: plane,
-            fullType: 'Boeing 737-800',
-            type: 'B737-800',
-            brand: 'Boeing',
-            description: ['Lorem ipsum aliqua magna sit amet ver dolor.Lorem ipsum aliqua magna sit amet ver dolor.' ,'4 years', '34m x 40m', '197 pax'],
-            price: '$ 120,000,000',
-            alt: 'B737',
-            id: 737
-        },
-        {
-            image: plane,
-            fullType: 'Airbus A320-300',
-            type: 'A320-300',
-            brand: 'Airbus',
-            description: ['Lorem ipsum aliqua magna sit amet ver dolor.Lorem ipsum aliqua magna sit amet ver dolor.' ,'4 years', '34m x 40m', '197 pax'],
-            price: '$ 135,000,000',
-            alt: 'A320',
-            id: 320
-        },
-        {
-            image: plane,
-            type: 'B747-800',
-            brand: 'Boeing',
-            price: '$ 420,000,000',
-            alt: 'B747'
-        },
-        {
-            image: require('./images/plane.jpg') ,
-            type: 'A380-800',
-            fullType: 'Airbus A380-800',
-            brand: 'Airbus',
-            description: ['Lorem ipsum aliqua magna sit amet ver dolor.Lorem ipsum aliqua magna sit amet ver dolor.' ,'4 years', '34m x 40m', '197 pax'],
-            price: '$ 445,000,000',
-            alt: 'A380',
-            id: 380
-        },
-        {
-            image: plane,
-            fullType: 'Boeing 747-800',
-            type: 'B747-800',
-            description: ['Lorem ipsum aliqua magna sit amet ver dolor.Lorem ipsum aliqua magna sit amet ver dolor.' ,'4 years', '34m x 40m', '197 pax'],
-            brand: 'Boeing',
-            price: '$ 420,000,000',
-            alt: 'B747',
-            id: 747
-        },
-      ];
+
+    const bestPlanes = [ planesObject[0], planesObject[1], planesObject[2], planesObject[6], planesObject[7] ];
 
     const mouseOverBtn = () => {
         const prmBtn = document.getElementById('primary-btn');
