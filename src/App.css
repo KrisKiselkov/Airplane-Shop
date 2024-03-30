@@ -334,7 +334,7 @@ main {
 #description {
   display: flex;
   position: relative;
-  top: 12em;
+  top: 11.5em;
   width: 82%;
   height: 480px;
   background-color: #61b0fb3a;
@@ -681,8 +681,10 @@ footer {
 
 #plane-page-img {
   position: relative;
-  top: 2em;
-  width: 600px;
+  border-radius: 14px;
+  height: 100%;
+  width: 98%;
+  object-fit: contain;
 }
 
 #description-container {
