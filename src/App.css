@@ -268,8 +268,9 @@ main {
   position: relative;
   top: 5em;
   width: 82%;
-  height: 640px;
+  height: 620px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .plane-card {
@@ -307,7 +308,7 @@ main {
 .plane-price {
   text-align: center;
   font-size: 25px;
-  margin-top: -4px;
+  margin-top: -7px;
 }
 
 .plane-desc {
@@ -316,8 +317,9 @@ main {
 }
 
 #all-h3 {
-  position: absolute;
-  top: 33em;
+  position: relative;
+  top: 5em;
+  width: 5em;
   left: 47%;
   text-decoration: underline;
 }
@@ -769,7 +771,7 @@ footer {
   padding-top: 2em;
   display: flex;
   justify-content: space-around;
-  background-color: #61b0fb3a;
+  background-color: #8bc7ff3a;
   height: 315px;
   border-radius: 12px;
 }
