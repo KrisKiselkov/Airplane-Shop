@@ -1,20 +1,26 @@
-import plane from './images/plane.png';
-import plane2 from './images/plane-2.png';
 import { Link } from 'react-router-dom';
 import { planesObject } from './planesObject';
+import { useState } from 'react';
+
 
 export function Planes() {
+
+    const [ filteredPlanes, setFilteredPlanes ] = useState(planesObject);
+
+    const filterAirbus = () => {
+        setFilteredPlanes(planes => planes.filter(maker => maker.brand === 'Airbus'));
+    };
 
     function planeFunc() {
         try {
             return (
-                planesObject.map((plane) => (
+                filteredPlanes.map((plane) => (
                     <Link to={`/${plane.id}`} className='link'><div className='plane-card'>
                         <img src={plane.image} className='plane-img' alt={plane.alt}></img>
                         <div className='plane-desc'>
                             <h3 className='plane-type'>{plane.type}</h3>
                             <p className='plane-brand'>{plane.brand}</p>
-                            <h4 className='plane-price'>{plane.price}</h4>
+                            <h4 className='plane-price'>$ {plane.price.toLocaleString()}</h4>
                         </div>
                     </div></Link>
                     )
@@ -51,7 +57,7 @@ export function Planes() {
                     <hr></hr>
                     <option className='drop-options'>All</option>
                     <hr></hr>
-                    <option className='drop-options'>Low-To-High</option>
+                    <option id='low'>Low-To-High</option>
                     <hr></hr>
                     <option className='drop-options'>High-to-Low</option>
                 </select>
@@ -61,7 +67,7 @@ export function Planes() {
                     <hr></hr>
                     <option className='drop-options'>All</option>
                     <hr></hr>
-                    <option className='drop-options'>Airbus</option>
+                    <option id='airbus' onClick={filterAirbus}>Airbus</option>
                     <hr></hr>
                     <option className='drop-options'>Boeing</option>
                 </select>

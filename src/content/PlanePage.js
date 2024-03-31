@@ -29,7 +29,7 @@ export function PlanePage() {
                 <div id="description-container">
                     <div id="desc-content">
                         <h1 id="plane-page-h1">{plane[0].fullType}</h1>
-                        <h2 id="plane-page-h2">{plane[0].price}</h2>
+                        <h2 id="plane-page-h2">$ {plane[0].price.toLocaleString()}</h2>
 
                         <h3 id="plane-page-h3">Description:</h3>
 
@@ -61,7 +61,7 @@ export function PlanePage() {
                                 <div className='plane-desc'>
                                     <h3 className='plane-type'>{plane.type}</h3>
                                     <p className='plane-brand'>{plane.brand}</p>
-                                    <h4 className='plane-price'>{plane.price}</h4>
+                                    <h4 className='plane-price'>$ {plane.price.toLocaleString()}</h4>
                                 </div>
                             </div></Link>
                             )

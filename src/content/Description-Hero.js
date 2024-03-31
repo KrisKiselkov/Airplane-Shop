@@ -57,7 +57,7 @@ export function DescriptionHero() {
                         <div className='plane-desc'>
                             <h3 className='plane-type'>{plane.type}</h3>
                             <p className='plane-brand'>{plane.brand}</p>
-                            <h4 className='plane-price'>{plane.price}</h4>
+                            <h4 className='plane-price'>$ {plane.price.toLocaleString()}</h4>
                         </div>
                     </div></Link>
                     ))}

@@ -5,7 +5,7 @@ export const planesObject = [
         type: 'B737-800',
         brand: 'Boeing',
         description: ['Lorem ipsum aliqua magna sit amet ver dolor.Lorem ipsum aliqua magna sit amet ver dolor.' ,'8 years', '34m x 40m', '189 pax'],
-        price: '$ 120,000,000',
+        price: 120000000,
         alt: 'B737',
         id: 737
     },
@@ -15,7 +15,7 @@ export const planesObject = [
         type: 'A320-300',
         brand: 'Airbus',
         description: ['Lorem ipsum aliqua magna sit amet ver dolor.Lorem ipsum aliqua magna sit amet ver dolor.' ,'9 years', '37.57m x 35.8m', '185 pax'],
-        price: '$ 101,000,000',
+        price: 101000000,
         alt: 'A320',
         id: 320
     },
@@ -25,7 +25,7 @@ export const planesObject = [
         type: 'B737-8200',
         brand: 'Boeing',
         description: ['Lorem ipsum aliqua magna sit amet ver dolor.Lorem ipsum aliqua magna sit amet ver dolor.' ,'4 years', '40m x 36m', '197 pax'],
-        price: '$ 155,000,000',
+        price: 155000000,
         alt: 'B38M',
         id: 7382
     },
@@ -35,7 +35,7 @@ export const planesObject = [
         type: 'B787-9',
         brand: 'Boeing',
         description: ['Lorem ipsum aliqua magna sit amet ver dolor.Lorem ipsum aliqua magna sit amet ver dolor.' ,'6 years', '57m x 63m', '290 pax'],
-        price: '$ 240,000,000',
+        price: 240000000,
         alt: 'B787',
         id: 787
     },
@@ -45,7 +45,7 @@ export const planesObject = [
         type: 'A330-900',
         brand: 'Airbus',
         description: ['Lorem ipsum aliqua magna sit amet ver dolor.Lorem ipsum aliqua magna sit amet ver dolor.' ,'3 years', '63.66m x 64m', '312 pax'],
-        price: '$ 300,000,000',
+        price: 300000000,
         alt: 'A330',
         id: 330
     },
@@ -55,7 +55,7 @@ export const planesObject = [
         type: 'A340-600',
         brand: 'Airbus',
         description: ['Lorem ipsum aliqua magna sit amet ver dolor.Lorem ipsum aliqua magna sit amet ver dolor.' ,'7 years', '75m x 63.45m', '370 pax'],
-        price: '$ 275,000,000',
+        price: 275000000,
         alt: 'A340',
         id: 340
     },
@@ -65,7 +65,7 @@ export const planesObject = [
         type: 'B747-800',
         description: ['Lorem ipsum aliqua magna sit amet ver dolor.Lorem ipsum aliqua magna sit amet ver dolor.' ,'12 years', '76m x 68m', '467 pax'],
         brand: 'Boeing',
-        price: '$ 420,000,000',
+        price: 420000000,
         alt: 'B747',
         id: 747
     },
@@ -75,7 +75,7 @@ export const planesObject = [
         fullType: 'Airbus A380-800',
         brand: 'Airbus',
         description: ['Lorem ipsum aliqua magna sit amet ver dolor.Lorem ipsum aliqua magna sit amet ver dolor.' ,'11 years', '73m x 80m', '509 pax'],
-        price: '$ 445,000,000',
+        price: 445000000,
         alt: 'A380',
         id: 380
     },
@@ -85,7 +85,7 @@ export const planesObject = [
         type: 'A220-300',
         description: ['Lorem ipsum aliqua magna sit amet ver dolor.Lorem ipsum aliqua magna sit amet ver dolor.' ,'2 years', '38.7m x 35.1m', '151 pax'],
         brand: 'Airbus',
-        price: '$ 40,000,000',
+        price: 40000000,
         alt: 'A220',
         id: 220
     },
@@ -95,7 +95,7 @@ export const planesObject = [
         type: 'B777-9',
         brand: 'Boeing',
         description: ['Lorem ipsum aliqua magna sit amet ver dolor.Lorem ipsum aliqua magna sit amet ver dolor.' ,'4 years', '76.67m x 71.26m', '426 pax'],
-        price: '$ 250,000,000',
+        price: 250000000,
         alt: 'B777',
         id: 777
     },
@@ -105,7 +105,7 @@ export const planesObject = [
         type: 'B767-400',
         brand: 'Boeing',
         description: ['Lorem ipsum aliqua magna sit amet ver dolor.Lorem ipsum aliqua magna sit amet ver dolor.' ,'15 years', '61m x 52m', '375 pax'],
-        price: '$ 200,800,000',
+        price: 200800000,
         alt: 'B767',
         id: 767
     },
@@ -115,7 +115,7 @@ export const planesObject = [
         type: 'A321-231',
         brand: 'Airbus',
         description: ['Lorem ipsum aliqua magna sit amet ver dolor.Lorem ipsum aliqua magna sit amet ver dolor.' ,'6 years', '44.51m x 35.80m', '200 pax'],
-        price: '$ 117,400,000',
+        price: 117400000,
         alt: 'A321',
         id: 321
     },
@@ -125,7 +125,7 @@ export const planesObject = [
         type: 'A350-1000',
         brand: 'Airbus',
         description: ['Lorem ipsum aliqua magna sit amet ver dolor.Lorem ipsum aliqua magna sit amet ver dolor.' ,'1 years', '73.79m x 65m', '410 pax'],
-        price: '$ 366,000,000',
+        price: 366000000,
         alt: 'A350',
         id: 350
     },
@@ -135,7 +135,7 @@ export const planesObject = [
         type: 'B757-200',
         description: ['Lorem ipsum aliqua magna sit amet ver dolor.Lorem ipsum aliqua magna sit amet ver dolor.' ,'18 years', '54,50m x 38.05m', '295 pax'],
         brand: 'Boeing',
-        price: '$ 110,000,000',
+        price: 110000000,
         alt: 'B757',
         id: 757
     },
@@ -145,7 +145,7 @@ export const planesObject = [
         fullType: 'Airbus A400M',
         brand: 'Airbus',
         description: ['Lorem ipsum aliqua magna sit amet ver dolor.Lorem ipsum aliqua magna sit amet ver dolor.' ,'15 years', '45.10m x 42m', '140 pax'],
-        price: '$ 200,000,000',
+        price: 200000000,
         alt: 'A400M',
         id: 400
     },
@@ -155,8 +155,8 @@ export const planesObject = [
         type: 'C-17',
         description: ['Lorem ipsum aliqua magna sit amet ver dolor.Lorem ipsum aliqua magna sit amet ver dolor.' ,'20 years', '53m x 52m', '134 pax'],
         brand: 'Boeing',
-        price: '$ 340,000,000',
+        price: 340000000,
         alt: 'C17',
         id: 17
     }
-];
+]
