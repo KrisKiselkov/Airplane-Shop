@@ -1,5 +1,5 @@
 import { useParams, Link } from "react-router-dom"
-import { planesObject } from "./Planes";
+import { planesObject } from "./planesObject";
 import { useState } from "react";
 import { Nav } from "./Nav";
 import { Footer } from './Footer';

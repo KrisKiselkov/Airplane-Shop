@@ -102,7 +102,7 @@ header.sticky {
 
 #short-desc {
   position: relative;
-  top: 7.5em;
+  top: 6.5em;
   left: 6em;
   width: 25em;
   background-color: #61b0fb3a;
@@ -122,7 +122,7 @@ header.sticky {
 
 #landing-con {
   position: relative;
-  top: 8.2em;
+  top: 7.2em;
   left: 6em;
   width: 9em;
   height: 3.8em;
@@ -160,7 +160,7 @@ header.sticky {
   position: relative;
   float: right;
   right: 3em;
-  bottom: 6em;
+  bottom: 7.2em;
   width: 43em;
   rotate: 10deg;
   animation-name: plane-an;
@@ -266,11 +266,52 @@ main {
   flex-wrap: wrap;
   justify-content: space-between;
   position: relative;
-  top: 5em;
+  top: 7em;
   width: 82%;
   height: 620px;
   margin: 0 auto;
   overflow: hidden;
+}
+
+#filter-btns {
+  position: relative;
+  text-align: center;
+  top: 3em;
+  width: 82%;
+  height: 0px;  
+  margin: 0 auto;
+}
+
+.dropdown {
+  background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTEiIGhlaWdodD0iNyIgdmlld0JveD0iMCAwIDExIDciIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik01LjI2MzA2IDYuNzU4NjlMMC44MTI2NTkgMi4zMDgyN0MwLjU5ODAyIDIuMDkzNjMgMC41OTgwMiAxLjc0NTY0IDAuODEyNjU5IDEuNTMxMDNMMS4zMzE3MyAxLjAxMTk2QzEuNTQ2IDAuNzk3Njg2IDEuODkzMjcgMC43OTcyNzQgMi4xMDgwNSAxLjAxMTA0TDUuNjUxNjkgNC41MzgwOEw5LjE5NTMxIDEuMDExMDRDOS40MTAwOSAwLjc5NzI3NCA5Ljc1NzM2IDAuNzk3Njg2IDkuOTcxNjMgMS4wMTE5NkwxMC40OTA3IDEuNTMxMDNDMTAuNzA1MyAxLjc0NTY3IDEwLjcwNTMgMi4wOTM2NSAxMC40OTA3IDIuMzA4MjdMNi4wNDAzMiA2Ljc1ODY5QzUuODI1NjggNi45NzMzMSA1LjQ3NzcgNi45NzMzMSA1LjI2MzA2IDYuNzU4NjlaIiBmaWxsPSJibGFjayIvPgo8L3N2Zz4K) no-repeat 95% 50%;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 30px;
+  width: 7.5em;
+  padding: 0 8px;
+  margin-right: 2em;
+  letter-spacing: 1px;
+  border: 3px solid transparent;
+  border-radius: 12px;
+  background-color: #61b0fb85;
+  color: #181818;
+  font-weight: 600;
+  font-size: 17px;
+  outline: none;
+  transition: border .2s ease-out;
+}
+
+.dropdown:hover {
+  border: 3px solid #1644cc;
+}
+
+.dropdown:focus {
+  border: 3px solid #1644cc;
+}
+
+hr{
+  height: 5px;
 }
 
 .plane-card {

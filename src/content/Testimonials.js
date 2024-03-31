@@ -29,65 +29,73 @@ export function Testimonials() {
             <div className='clients swiper-wrapper'>
                 <div className='fr-client swiper-slide'>
                     <div className="main-pic">
-                        <img src={krisPh} className='client-image'></img>
+                        <img src={krisPh} alt='profile' className='client-image'></img>
                         <p className='clients-text'>Lorem ipsum sit dolor amet magna aliqua consectetur. Lorem ipsum sit dolor amet magna aliqua consectetur.</p>
                         <h2 className='client-name'>Kristian Kiselkov</h2>
                     </div>
 
                     <div className="sec-pic">
-                        <img src={krisPh} className='client-image'></img>                        
+                        <img src={krisPh} alt='profile' className='client-image'></img>                        
                     </div>
 
-                    <div className="trd-pic">                        <img src={krisPh} className='client-image'></img>
+                    <div className="trd-pic">            
+                        <img src={krisPh} alt='profile' className='client-image'></img>
                     </div>
 
-                    <div className="frth-pic">                       <img src={krisPh} className='client-image'></img>
+                    <div className="frth-pic">                       
+                        <img src={krisPh} alt='profile' className='client-image'></img>
                     </div>
 
                     <div className="fth-pic">    
-                    <img src={krisPh} className='client-image'></img> 
+                        <img src={krisPh} alt='profile'  className='client-image'></img> 
                     </div>
                 </div>
 
                 <div className='sc-client swiper-slide'>
                     <div className="main-pic">
-                        <img src={krisPh} className='client-image'></img>
+                        <img src={krisPh} alt='profile' className='client-image'></img>
                         <p className='clients-text'>Lorem ipsum sit dolor amet magna aliqua consectetur. Lorem ipsum sit dolor amet magna aliqua consectetur.</p>
                         <h2 className='client-name'>Boris Petrov</h2>
                     </div>
 
-                    <div className="sec-pic">                        <img src={krisPh} className='client-image'></img>
+                    <div className="sec-pic">                        
+                        <img src={krisPh} alt='profile' className='client-image'></img>
                     </div>
 
-                    <div className="trd-pic">                        <img src={krisPh} className='client-image'></img>
+                    <div className="trd-pic">                       
+                        <img src={krisPh} alt='profile' className='client-image'></img>
                     </div>
 
-                    <div className="frth-pic">                       <img src={krisPh} className='client-image'></img>
+                    <div className="frth-pic">                       
+                        <img src={krisPh} alt='profile' className='client-image'></img>
                     </div>
 
                     <div className="fth-pic">   
-                        <img src={krisPh} className='client-image'></img>  
+                        <img src={krisPh} alt='profile' className='client-image'></img>  
                     </div>
                 </div>
 
                 <div className='trd-client swiper-slide'>
                     <div className="main-pic">
-                        <img src={krisPh} className='client-image'></img>
+                        <img src={krisPh} alt='profile' className='client-image'></img>
                         <p className='clients-text'>Lorem ipsum sit dolor amet magna aliqua consectetur. Lorem ipsum sit dolor amet magna aliqua consectetur.</p>
                         <h2 className='client-name'>Daniel Kiselkov</h2>
                     </div>
 
-                    <div className="sec-pic">                        <img src={krisPh} className='client-image'></img>
+                    <div className="sec-pic">                        
+                        <img src={krisPh} alt='profile' className='client-image'></img>
                     </div>
 
-                    <div className="trd-pic">                        <img src={krisPh} className='client-image'></img>
+                    <div className="trd-pic">                        
+                        <img src={krisPh} alt='profile' className='client-image'></img>
                     </div>
 
-                    <div className="frth-pic">                       <img src={krisPh} className='client-image'></img>
+                    <div className="frth-pic">                     
+                        <img src={krisPh} alt='profile' className='client-image'></img>
                     </div>
 
                     <div className="fth-pic">    
-                    <img src={krisPh} className='client-image'></img> 
+                       <img src={krisPh} alt='profile' className='client-image'></img> 
                     </div>
                 </div>
                 

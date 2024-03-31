@@ -1,7 +1,7 @@
 import plane from './images/plane-2.png';
 import cloud from './images/clouds.png'
 import { Link } from 'react-router-dom';
-import { planesObject } from './Planes';
+import { planesObject } from './planesObject';
 
 export function DescriptionHero() {
 
