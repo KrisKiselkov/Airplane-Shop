@@ -265,7 +265,7 @@ main {
 #collection {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  gap: 0px 38px;
   position: relative;
   top: 7em;
   width: 82%;

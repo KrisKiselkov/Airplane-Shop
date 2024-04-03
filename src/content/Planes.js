@@ -1,15 +1,63 @@
 import { Link } from 'react-router-dom';
 import { planesObject } from './planesObject';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 
 export function Planes() {
 
     const [ filteredPlanes, setFilteredPlanes ] = useState(planesObject);
+    const [ filteredMaker, setFilteredMaker ] = useState(null);
+    const [ filteredType, setFilteredType ] = useState(null);
+    const [ filteredPrice, setFilteredPrice ] = useState(null);
 
-    const filterAirbus = () => {
-        setFilteredPlanes(planes => planes.filter(maker => maker.brand === 'Airbus'));
+    const filterPlanes = () => {
+        let filteredResult = planesObject;
+
+        if (filteredPrice === 'low') {
+            filteredResult = filteredResult.sort((a, b) => a.price - b.price)
+        }
+
+        // Apply maker filter
+        if (filteredMaker === 'Airbus' || filteredMaker === 'Boeing') {
+            filteredResult = filteredResult.filter(maker => maker.brand === filteredMaker);
+        } else if (filteredMaker === 'All' || filteredMaker === 'Maker') {
+            filteredResult = planesObject;
+        }
+
+        // Apply type filter
+        if (filteredType === 'Commercial' || filteredType === 'Military') {
+            filteredResult = filteredResult.filter(maker => maker.model === filteredType);
+        } else if (filteredType === 'All' || filteredType === 'Type') {
+            filteredResult = planesObject;
+        }
+
+        if (filteredType === 'low' || filteredType === 'high') {
+            filteredResult = filteredResult.filter(maker => maker.model === filteredType);
+        } else if (filteredType === 'All' || filteredType === 'Type') {
+            filteredResult = planesObject;
+        }
+
+        setFilteredPlanes(filteredResult);
     };
+
+    const filterPrice = (event) => {
+        const priceFilter = event.target.value;
+        setFilteredPrice(priceFilter)
+    }
+
+    const filterMaker = (event) => {
+    const makerFilter = event.target.value;
+    setFilteredMaker(makerFilter);
+    };
+
+    const filterType = (event) => {
+    const typeFilter = event.target.value;
+    setFilteredType(typeFilter);
+    };
+
+    useEffect(() => {
+    filterPlanes();
+    }, [filteredMaker, filteredType, filteredPrice]);
 
     function planeFunc() {
         try {
@@ -52,34 +100,30 @@ export function Planes() {
         <>
             <h1 id="main-h1">Plane Collection</h1>
             <div id='filter-btns'>
-                <select className='dropdown'>
-                    <option className='drop-options'>Price</option>
+                <select className='dropdown' onChange={(e) => filterPrice(e)}>
+                    <option value='price' diasable>Price</option>
                     <hr></hr>
-                    <option className='drop-options'>All</option>
+                    <option value='low'>Low-To-High</option>
                     <hr></hr>
-                    <option id='low'>Low-To-High</option>
-                    <hr></hr>
-                    <option className='drop-options'>High-to-Low</option>
+                    <option value='high'>High-to-Low</option>
                 </select>
 
-                <select className='dropdown'>
-                    <option className='drop-options'>Maker</option>
+                <select className='dropdown' onChange={(e) => filterMaker(e)}>
+                    <option value='Maker'>Maker</option>
                     <hr></hr>
-                    <option className='drop-options'>All</option>
+                    <option value='All'>All</option>
                     <hr></hr>
-                    <option id='airbus' onClick={filterAirbus}>Airbus</option>
+                    <option value='Airbus'>Airbus</option>
                     <hr></hr>
-                    <option className='drop-options'>Boeing</option>
+                    <option value='Boeing'>Boeing</option>
                 </select>
 
-                <select className='dropdown'>
-                    <option className='drop-options'>Type</option>
+                <select className='dropdown' onChange={(e) => filterType(e)}>
+                    <option value='Type' disabled>Type</option>
                     <hr></hr>
-                    <option className='drop-options'>All</option>
+                    <option value='Commercial'>Commercial</option>
                     <hr></hr>
-                    <option className='drop-options'>Commercial</option>
-                    <hr></hr>
-                    <option className='drop-options'>Military</option>
+                    <option value='Military'>Military</option>
                 </select>
             </div>
             <section id='collection'>
