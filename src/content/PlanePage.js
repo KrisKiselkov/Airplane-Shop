@@ -21,6 +21,11 @@ export function PlanePage() {
         altArr.push(planesObject[i]);
     } 
 
+    function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+
     return (
         <>
             <Nav />
@@ -60,7 +65,7 @@ export function PlanePage() {
                 <div id="alt-container">
                     {
                         altArr.map((plane) => (
-                            <Link to={`/${plane.id}`} className='link'><div className='plane-card'>
+                            <Link to={`/${plane.id}`} className='link'><div className='plane-card' onClick={topFunction()}>
                                 <img src={plane.image} className='plane-img' alt={plane.alt}></img>
                                 <div className='plane-desc'>
                                     <h3 className='plane-type'>{plane.type}</h3>

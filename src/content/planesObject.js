@@ -34,8 +34,8 @@ export const planesObject = [
     },
     {
         image: require('./images/787.png'),
-        fullType: 'Boeing 787-9',
-        type: 'B787-9',
+        fullType: 'Boeing 787-900',
+        type: 'B787-900',
         brand: 'Boeing',
         model: 'Commercial',
         description: ['Lorem ipsum aliqua magna sit amet ver dolor.Lorem ipsum aliqua magna sit amet ver dolor.' ,'6 years', '57m x 63m', '290 pax'],
@@ -100,8 +100,8 @@ export const planesObject = [
     },
     {
         image: require('./images/777.png'),
-        fullType: 'Boeing 777-9',
-        type: 'B777-9',
+        fullType: 'Boeing 777-900',
+        type: 'B777-900',
         brand: 'Boeing',
         model: 'Commercial',
         description: ['Lorem ipsum aliqua magna sit amet ver dolor.Lorem ipsum aliqua magna sit amet ver dolor.' ,'4 years', '76.67m x 71.26m', '426 pax'],

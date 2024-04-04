@@ -59,14 +59,16 @@ export function Planes() {
         try {
             return (
                 filteredPlanes.map((plane) => (
-                    <Link to={`/${plane.id}`} className='link'><div className='plane-card'>
-                        <img src={plane.image} className='plane-img' alt={plane.alt}></img>
-                        <div className='plane-desc'>
-                            <h3 className='plane-type'>{plane.type}</h3>
-                            <p className='plane-brand'>{plane.brand}</p>
-                            <h4 className='plane-price'>$ {plane.price.toLocaleString()}</h4>
+                    <Link to={`/${plane.id}`} className='link'>
+                        <div className='plane-card'>
+                            <img src={plane.image} className='plane-img' alt={plane.alt}></img>
+                            <div className='plane-desc'>
+                                <h3 className='plane-type'>{plane.type}</h3>
+                                <p className='plane-brand'>{plane.brand}</p>
+                                <h4 className='plane-price'>$ {plane.price.toLocaleString()}</h4>
+                            </div>
                         </div>
-                    </div></Link>
+                    </Link>
                     )
                 )
             )

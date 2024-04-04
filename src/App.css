@@ -358,6 +358,10 @@ hr{
   margin-top: -4px;
 }
 
+.plane-card:hover {
+  color: #1644cc;
+}
+
 #all-h3 {
   position: relative;
   top: 5em;
