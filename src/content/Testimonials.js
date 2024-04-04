@@ -1,5 +1,8 @@
-import plane from './images/plane-2.png';
-import krisPh from './images/Photo-1.jpg';
+import krisPh from './testimonials-images/Photo-1.jpg';
+import secondPh from './testimonials-images/second.jpg';
+import thirdPh from './testimonials-images/third.jpg';
+import forthPh from './testimonials-images/forth.jpg';
+import fifthPh from './testimonials-images/fifth.jpg';
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
@@ -35,25 +38,25 @@ export function Testimonials() {
                     </div>
 
                     <div className="sec-pic">
-                        <img src={krisPh} alt='profile' className='client-image'></img>                        
+                        <img src={secondPh} alt='profile' className='client-image'></img>                        
                     </div>
 
                     <div className="trd-pic">            
-                        <img src={krisPh} alt='profile' className='client-image'></img>
+                        <img src={thirdPh} alt='profile' className='client-image'></img>
                     </div>
 
                     <div className="frth-pic">                       
-                        <img src={krisPh} alt='profile' className='client-image'></img>
+                        <img src={forthPh} alt='profile' className='client-image'></img>
                     </div>
 
                     <div className="fth-pic">    
-                        <img src={krisPh} alt='profile'  className='client-image'></img> 
+                        <img src={fifthPh} alt='profile'  className='client-image'></img> 
                     </div>
                 </div>
 
                 <div className='sc-client swiper-slide'>
                     <div className="main-pic">
-                        <img src={krisPh} alt='profile' className='client-image'></img>
+                        <img src={secondPh} alt='profile' className='client-image'></img>
                         <p className='clients-text'>Lorem ipsum sit dolor amet magna aliqua consectetur. Lorem ipsum sit dolor amet magna aliqua consectetur.</p>
                         <h2 className='client-name'>Boris Petrov</h2>
                     </div>
@@ -63,27 +66,27 @@ export function Testimonials() {
                     </div>
 
                     <div className="trd-pic">                       
-                        <img src={krisPh} alt='profile' className='client-image'></img>
+                        <img src={thirdPh} alt='profile' className='client-image'></img>
                     </div>
 
                     <div className="frth-pic">                       
-                        <img src={krisPh} alt='profile' className='client-image'></img>
+                        <img src={forthPh} alt='profile' className='client-image'></img>
                     </div>
 
                     <div className="fth-pic">   
-                        <img src={krisPh} alt='profile' className='client-image'></img>  
+                        <img src={fifthPh} alt='profile' className='client-image'></img>  
                     </div>
                 </div>
 
                 <div className='trd-client swiper-slide'>
                     <div className="main-pic">
-                        <img src={krisPh} alt='profile' className='client-image'></img>
+                        <img src={thirdPh} alt='profile' className='client-image'></img>
                         <p className='clients-text'>Lorem ipsum sit dolor amet magna aliqua consectetur. Lorem ipsum sit dolor amet magna aliqua consectetur.</p>
                         <h2 className='client-name'>Daniel Kiselkov</h2>
                     </div>
 
                     <div className="sec-pic">                        
-                        <img src={krisPh} alt='profile' className='client-image'></img>
+                        <img src={secondPh} alt='profile' className='client-image'></img>
                     </div>
 
                     <div className="trd-pic">                        
@@ -91,7 +94,55 @@ export function Testimonials() {
                     </div>
 
                     <div className="frth-pic">                     
+                        <img src={forthPh} alt='profile' className='client-image'></img>
+                    </div>
+
+                    <div className="fth-pic">    
+                       <img src={fifthPh} alt='profile' className='client-image'></img> 
+                    </div>
+                </div>
+
+                <div className='frth-client swiper-slide'>
+                    <div className="main-pic">
+                        <img src={forthPh} alt='profile' className='client-image'></img>
+                        <p className='clients-text'>Lorem ipsum sit dolor amet magna aliqua consectetur. Lorem ipsum sit dolor amet magna aliqua consectetur.</p>
+                        <h2 className='client-name'>Rosen Plevneliev</h2>
+                    </div>
+
+                    <div className="sec-pic">                        
+                        <img src={secondPh} alt='profile' className='client-image'></img>
+                    </div>
+
+                    <div className="trd-pic">                        
+                        <img src={thirdPh} alt='profile' className='client-image'></img>
+                    </div>
+
+                    <div className="frth-pic">                     
                         <img src={krisPh} alt='profile' className='client-image'></img>
+                    </div>
+
+                    <div className="fth-pic">    
+                       <img src={fifthPh} alt='profile' className='client-image'></img> 
+                    </div>
+                </div>
+
+                <div className='trd-client swiper-slide'>
+                    <div className="main-pic">
+                        <img src={fifthPh} alt='profile' className='client-image'></img>
+                        <p className='clients-text'>Lorem ipsum sit dolor amet magna aliqua consectetur. Lorem ipsum sit dolor amet magna aliqua consectetur.</p>
+                        <h2 className='client-name'>Valio Plamenov</h2>
+                    </div>
+
+                    <div className="sec-pic">                        
+                        <img src={secondPh} alt='profile' className='client-image'></img>
+                    </div>
+
+                    <div className="trd-pic">                        
+                        <img src={thirdPh} alt='profile' className='client-image'></img>
+                    </div>
+
+                    <div className="frth-pic">                     
+                        <img src={forthPh} alt='profile' className='client-image'></img>
                     </div>
 
                     <div className="fth-pic">    
