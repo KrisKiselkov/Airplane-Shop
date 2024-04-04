@@ -11,10 +11,12 @@ export function Planes() {
     const [ filteredPrice, setFilteredPrice ] = useState(null);
 
     const filterPlanes = () => {
-        let filteredResult = planesObject;
+        let filteredResult = planesObject.slice();
 
-        if (filteredPrice === 'low') {
-            filteredResult = filteredResult.sort((a, b) => a.price - b.price)
+        if (filteredPrice === 'Low-To-High') {
+            filteredResult = filteredResult.sort((a, b) => a.price - b.price);
+        } else if (filteredPrice === 'High-To-Low') {
+            filteredResult = filteredResult.sort((a, b) => b.price - a.price);
         }
 
         // Apply maker filter
@@ -27,13 +29,7 @@ export function Planes() {
         // Apply type filter
         if (filteredType === 'Commercial' || filteredType === 'Military') {
             filteredResult = filteredResult.filter(maker => maker.model === filteredType);
-        } else if (filteredType === 'All' || filteredType === 'Type') {
-            filteredResult = planesObject;
-        }
-
-        if (filteredType === 'low' || filteredType === 'high') {
-            filteredResult = filteredResult.filter(maker => maker.model === filteredType);
-        } else if (filteredType === 'All' || filteredType === 'Type') {
+        } else if (filteredType === 'Type') {
             filteredResult = planesObject;
         }
 
@@ -101,11 +97,11 @@ export function Planes() {
             <h1 id="main-h1">Plane Collection</h1>
             <div id='filter-btns'>
                 <select className='dropdown' onChange={(e) => filterPrice(e)}>
-                    <option value='price' diasable>Price</option>
+                    <option value='Price'>Price</option>
                     <hr></hr>
-                    <option value='low'>Low-To-High</option>
+                    <option value='Low-To-High'>Low-To-High</option>
                     <hr></hr>
-                    <option value='high'>High-to-Low</option>
+                    <option value='High-To-Low'>High-To-Low</option>
                 </select>
 
                 <select className='dropdown' onChange={(e) => filterMaker(e)}>
@@ -119,7 +115,7 @@ export function Planes() {
                 </select>
 
                 <select className='dropdown' onChange={(e) => filterType(e)}>
-                    <option value='Type' disabled>Type</option>
+                    <option value='Type'>Type</option>
                     <hr></hr>
                     <option value='Commercial'>Commercial</option>
                     <hr></hr>

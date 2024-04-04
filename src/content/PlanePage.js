@@ -1,6 +1,6 @@
 import { useParams, Link } from "react-router-dom"
 import { planesObject } from "./planesObject";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Nav } from "./Nav";
 import { Footer } from './Footer';
 
@@ -10,6 +10,10 @@ export function PlanePage() {
     const plane = planesObject.filter((item) => item.id === parseInt(id));
 
     const [ image, setImage ] = useState(plane[0].image);
+
+    useEffect(() => {
+        setImage(plane[0].image);
+    }, [id])
 
     const altArr =[];
 
