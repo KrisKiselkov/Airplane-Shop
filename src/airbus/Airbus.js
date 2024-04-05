@@ -12,7 +12,6 @@ export function Airbus() {
 
     const filterPlanes = () => {
         const airbusFilter = planesObject.filter(planes => planes.brand === 'Airbus');
-        console.log(airbusFilter);
         let filteredResult = airbusFilter.slice();
 
         if (filteredPrice === 'Low-To-High') {
@@ -70,7 +69,7 @@ export function Airbus() {
             <Nav />
             <div id="title-hero">
                 <div id="plane-background"></div>
-                <img src={airbus} id="airbus-title"></img>
+                <img src={airbus} id="air-bo-title"></img>
             </div>
 
             <div id='filter-btns'>
