@@ -631,7 +631,7 @@ hr{
 #sub-container {
   display: flex;
   position: relative;
-  top: 4.5em;
+  top: 4em;
   height: 4em;
   width: 30em;
   background-color: #61b0fb;
@@ -849,4 +849,77 @@ footer {
   transform: translate(-50%, -50%);
   width: 450px;
   z-index: 2;
+}
+
+.about-airbo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 3fr 1fr;
+  gap: 15px;
+  position: relative;
+  top: 11em;
+  height: 500px;
+  width: 82%;
+  margin: 0 auto;
+}
+
+.m-ab-airbo {
+  background-color: #61b0fb6b;
+  grid-row: 1/3;
+  padding: 0em 1.5em;
+  border-radius: 15px;
+}
+
+.ab-airbo-h3 {
+  color: #1644cc;
+}
+
+.ab-airbo-h1 {
+  font-size: 40px;
+  width: 90%;
+}
+
+.ab-airbo-h1 span {
+  background: linear-gradient(to right, #1644cc, #61b0fb);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.ab-airbo-p {
+  position: relative;
+  top: 2em;
+}
+
+.picture-ab-airbo {
+  background-size: cover;
+  border-radius: 15px;
+}
+
+.air-ba {
+  background-image: url(./content/images/a350-1000_british_airways_msn326_vtp_fitting_-_overview_copy.jpg);
+}
+
+.bo-ba {
+  background-image: url(./content/images/boeing-manifacturing.jpg);
+  background-position: center;
+}
+
+.stats-airbo {
+  display: grid;
+  grid-template: 85px 85px / 1fr 1fr;
+  background-color: #61b0fb6b;
+  border-radius: 15px;
+  gap: 10px;
+  padding: 1em;
+}
+
+.stats-airbo div {
+  background-color: #61b0fb;
+  border-radius: 12px;
+  line-height: 12px;
+  padding-left: 17px
+}
+
+.stats-airbo div > h2 {
+  font-size: 30px;
 }

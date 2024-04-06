@@ -1,5 +1,7 @@
-import { Nav } from "../content/Nav"
-import airbus from '../content/images/1200px-Airbus_logo_2017.png'
+import { Nav } from "../content/Nav";
+import { Newsletter } from "../content/Newsletter";
+import { Footer } from "../content/Footer";
+import airbus from '../content/images/1200px-Airbus_logo_2017.png';
 import { planesObject } from "../content/planesObject";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
@@ -92,6 +94,38 @@ export function Airbus() {
             <section id='collection'>
                 {planeFunc()}
             </section>
+
+            <section className="about-airbo">
+                <div className="m-ab-airbo">
+                    <h3 className="ab-airbo-h3">History of Airbus</h3>
+                    <h1 className="ab-airbo-h1">The Most <span>Successful</span> European Plane Maker</h1>
+
+                    <p className="ab-airbo-p">Lorem ipsum dolor sit amet aliqua magna alt dolore consectetur. Lorem ipsum dolor sit amet aliqua magna alt dolore consectetur. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet aliqua magna alt dolore consectetur. Lorem ipsum dolor sit amet aliqua magna alt dolore consectetur. Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div className="picture-ab-airbo air-ba">
+                </div>
+                <div className="stats-airbo">
+                    <div>
+                        <h2>50+</h2>
+                        <p>Years of experience</p>
+                    </div>
+                    <div>
+                        <h2>32</h2>
+                        <p>Planes</p>
+                    </div>
+                    <div>
+                        <h2>13,500+</h2>
+                        <p>Delivered Planes</p>
+                    </div>
+                    <div>
+                        <h2>#1</h2>
+                        <p>Top Rank</p>
+                    </div>
+                </div>
+            </section>
+
+            <Newsletter />
+            <Footer />
         </>
     )
 }

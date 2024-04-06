@@ -1,5 +1,7 @@
-import { Nav } from "../content/Nav"
-import boeing from '../content/images/Boeing_full_logo.svg.png'
+import { Nav } from "../content/Nav";
+import { Newsletter } from "../content/Newsletter";
+import { Footer } from "../content/Footer";
+import boeing from '../content/images/Boeing_full_logo.svg.png';
 import { planesObject } from "../content/planesObject";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
@@ -92,6 +94,38 @@ export function Boeing() {
             <section id='collection'>
                 {planeFunc()}
             </section>
+
+            <section className="about-airbo">
+                <div className="m-ab-airbo">
+                    <h3 className="ab-airbo-h3">History of Boeing</h3>
+                    <h1 className="ab-airbo-h1">The Most <span>Successful</span> American Plane Maker</h1>
+
+                    <p className="ab-airbo-p">Lorem ipsum dolor sit amet aliqua magna alt dolore consectetur. Lorem ipsum dolor sit amet aliqua magna alt dolore consectetur. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet aliqua magna alt dolore consectetur. Lorem ipsum dolor sit amet aliqua magna alt dolore consectetur. Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div className="picture-ab-airbo bo-ba">
+                </div>
+                <div className="stats-airbo">
+                    <div>
+                        <h2>65+</h2>
+                        <p>Years of experience</p>
+                    </div>
+                    <div>
+                        <h2>38</h2>
+                        <p>Planes</p>
+                    </div>
+                    <div>
+                        <h2>15,000+</h2>
+                        <p>Delivered Planes</p>
+                    </div>
+                    <div>
+                        <h2>#2</h2>
+                        <p>Top Rank</p>
+                    </div>
+                </div>
+            </section>
+
+            <Newsletter />
+            <Footer />
         </>
     )
 }
