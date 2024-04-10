@@ -3,9 +3,12 @@ import { planesObject } from "./planesObject";
 import { useEffect, useState } from "react";
 import { Nav } from "./Nav";
 import { Footer } from './Footer';
-
+import { addItem } from "./cartSlice";
+import { store } from "../store";
 
 export function PlanePage() {
+    const dispatch = store.dispatch;
+    
     const { id } = useParams();
     const plane = planesObject.filter((item) => item.id === parseInt(id));
 
@@ -26,37 +29,44 @@ export function PlanePage() {
         document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     }
 
+    const addPlaneFunc = (plane) => {
+        dispatch(addItem(plane))
+    };
+    
+    const { fullType, price, alt, description } = plane[0];
+
+
     return (
         <>
             <Nav />
 
             <section id="plane-page">
                 <div id="image-container">
-                    <img src={image} alt={plane[0].alt} id="plane-page-img"></img>
+                    <img src={image} alt={alt} id="plane-page-img"></img>
                 </div>
 
                 <div id="description-container">
                     <div id="desc-content">
-                        <h1 id="plane-page-h1">{plane[0].fullType}</h1>
-                        <h2 id="plane-page-h2">$ {plane[0].price.toLocaleString()}</h2>
+                        <h1 id="plane-page-h1">{fullType}</h1>
+                        <h2 id="plane-page-h2">$ {price.toLocaleString()}</h2>
 
                         <h3 id="plane-page-h3">Description:</h3>
 
-                        <p id="plane-page-Mp">{plane[0].description[0]}</p>
+                        <p id="plane-page-Mp">{description[0]}</p>
                         <br></br>
                         <ul id="plane-page-ul">
-                            <li>Age: {plane[0].description[1]}</li>
+                            <li key='age'>Age: {description[1]}</li>
                             <br></br>
 
-                            <li>Size: {plane[0].description[2]}</li>
+                            <li key='size'>Size: {description[2]}</li>
                             <br></br>
 
-                            <li>Capacity: {plane[0].description[3]}</li>
+                            <li key='capacity'>Capacity: {description[3]}</li>
                         </ul>
                     </div>
 
                     <button className="plane-page-primaryB plane-btn">Buy Now</button>
-                    <button className="plane-page-secondB plane-btn">Add To Cart</button>
+                    <button className="plane-page-secondB plane-btn" onClick={() => addPlaneFunc(plane[0])}>Add To Cart</button>
                 </div>
             </section>
 

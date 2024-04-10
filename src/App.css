@@ -22,7 +22,7 @@ header {
 }
 
 header.sticky {
-  background-color: #cee7ff;
+  background-color: #fff;
 }
 
 #logo {
@@ -52,12 +52,91 @@ header.sticky {
   transition: color .2s;
 }
 
-#basket {
-  position: relative;
-  float: right;
+#cart-button {
+  position: absolute;
+  display: flex;
   top: 1.8em;
-  left: 19.5em;
+  right: 2em;
+  width: 3em;
+  height: 3em;
   transition: all .3s;
+}
+
+#cart-num {
+  position: absolute;
+  width: 1.4em;
+  height: 1.4em;
+  bottom: 0;
+  right: 0;
+  color: #fff;
+  background-color: red;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-25%, -10%);
+  z-index: 96;
+}
+
+.page-overlay {
+  position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1000%;
+    background-color: #00000075;
+    z-index: 888;
+}
+
+.no-overlay {
+  left: -100%;
+}
+
+.cart-container {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  padding: .5em;
+  background-color: #fff;
+  height: 100vh;
+  width: 30em;
+  transition: all 0.4s ease;
+}
+
+.closed-cart {
+  right: -100%;
+}
+
+.open-cart {
+  right: 0;
+}
+
+#cart-header {
+  display: flex;
+  padding-bottom: 5px;
+  border-bottom: 2px dashed #181818;
+}
+
+#x {
+  position: relative;
+  left: 8em;
+  cursor: pointer
+}
+
+#cart-h2 {
+  position: relative;
+  left: 1em;
+}
+
+#cart-content hr {
+  display: block;
+  border: none;
+  height: 2px;
+  background-color: #181818;
+  margin-top: 1.8em;
 }
 
 #nav-list a:hover {
@@ -922,4 +1001,9 @@ footer {
 
 .stats-airbo div > h2 {
   font-size: 30px;
+}
+
+/* CART ITEMS */
+#cart-plane {
+  
 }

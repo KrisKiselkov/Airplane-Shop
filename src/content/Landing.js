@@ -6,13 +6,11 @@ import { Testimonials } from "./Testimonials";
 import { Newsletter } from "./Newsletter";
 import { Footer } from "./Footer";
 
-
 export function Landing() {
-
     return (
         <body>
             <Nav />
-
+            
             <Home />
 
             <main>
