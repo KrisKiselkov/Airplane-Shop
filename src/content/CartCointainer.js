@@ -2,23 +2,29 @@
 
 export function CartContainer(props) {
     const { cart, cartUse } = props;
-    console.log(cart)
+    
     const cartElements = [];
-    console.log(cartElements)
+
     const createCartItem = (plane) => {
         const items = cart[plane]
         return (
-            <>
+            <div key={plane} id="cart-plane">
                 <img src={items.image} id="cart-plane-img"></img>
-                <h3 id="cart-plane-type">{plane}</h3>
-                <h2 id="cart-plane-price">{items.price}</h2>
-            </>
+                <div id="cart-plane-desc">
+                    <h3 id="cart-plane-type">{plane}</h3>
+                    <h2 id="cart-plane-price">$ {items.price.toLocaleString()}</h2>
+                    <p>1 Week Delivery</p>
+                </div>
+                <div id="cart-remove">
+                    <h1>X</h1>
+                </div>
+                <br></br>
+            </div>
         )
     }
 
     for (let plane in cart) {
         cartElements.push(createCartItem(plane));
-        console.log(plane)
     }
 
 
@@ -31,9 +37,7 @@ export function CartContainer(props) {
                         <h2 id="x" onClick={props.openCart}>X</h2>
                     </div>
                     <div id="added-container">
-                        <div id="cart-plane">
-                            {cartElements}
-                        </div>
+                        {cartElements}
                     </div>
                 </div>
             </div>

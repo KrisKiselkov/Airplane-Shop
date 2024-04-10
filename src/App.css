@@ -1004,6 +1004,56 @@ footer {
 }
 
 /* CART ITEMS */
+#added-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
 #cart-plane {
-  
+  display: flex;
+  height: 150px;
+  width: 29em;
+  margin: 5px;
+  border: 3px solid #181818;
+}
+
+#cart-plane-img {
+  height: 100%;
+  width: 40%;
+  object-fit: contain;
+}
+
+#cart-plane-desc {
+  position: relative;
+  top: 8px;
+  left: 2px;
+  line-height: 20px;
+}
+
+#cart-plane-type {
+
+}
+
+#cart-plane-price {
+  font-size: 140%;  
+}
+
+#cart-remove {
+  position: relative;
+  float: right;
+  left: 1.2em;
+  background-color: transparent;
+  width: 20.2%;
+  border-left: 3px solid;
+  text-align: center;
+  transition: .2s background-color ease;
+}
+
+#cart-remove:hover {
+  background-color: red;
+}
+
+#cart-remove h1 {
+  margin-top: 2.3em;
 }
