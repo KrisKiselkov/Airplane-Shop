@@ -40,7 +40,7 @@ export function PlanePage() {
         <>
             <Nav />
 
-            <section id="plane-page">
+            <section id="plane-page" key={id}>
                 <div id="image-container">
                     <img src={image} alt={alt} id="plane-page-img"></img>
                 </div>
@@ -54,14 +54,14 @@ export function PlanePage() {
 
                         <p id="plane-page-Mp">{description[0]}</p>
                         <br></br>
-                        <ul id="plane-page-ul">
-                            <li key='age'>Age: {description[1]}</li>
+                        <ul id="plane-page-ul" key={`${id}`}>
+                            <li key={`${id}${description[1]}`}>Age: {description[1]}</li>
                             <br></br>
 
-                            <li key='size'>Size: {description[2]}</li>
+                            <li key={`${id}${description[2]}`}>Size: {description[2]}</li>
                             <br></br>
 
-                            <li key='capacity'>Capacity: {description[3]}</li>
+                            <li key={`${id}${description[3]}`}>Capacity: {description[3]}</li>
                         </ul>
                     </div>
 
