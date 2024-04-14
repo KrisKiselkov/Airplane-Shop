@@ -9,6 +9,8 @@ export function CartContainer(props) {
 
     const [ cartElements, setCartElements ] = useState([]);
 
+    const [totalPrice, setTotalPrice] = useState(0);
+
     console.log(cart)
     console.log(cartElements)
     const removeElement = (id) => {
@@ -39,6 +41,9 @@ export function CartContainer(props) {
     useEffect(() => {
         const newCartElements = Object.keys(cart).map(plane => createCartItem(plane));
         setCartElements(newCartElements);
+
+        const newTotalPrice = Object.values(cart).reduce((acc, plane) => acc + plane.price, 10852);
+        setTotalPrice(newTotalPrice);
     }, [cart]);
 
     return (
@@ -46,7 +51,7 @@ export function CartContainer(props) {
             <div className={`cart-container ${cartUse ? "open-cart" : "closed-cart"}`}>
                 <div id="cart-content">
                     <div id="cart-header">    
-                        <h2 id="cart-h2">Your Shopping Cart</h2>
+                        <h2 id="cart-h2">Your Shopping Cart ({cartElements.length})</h2>
                         <h2 id="x" onClick={props.openCart}>X</h2>
                     </div>
                     <div id="container-body">
@@ -54,7 +59,9 @@ export function CartContainer(props) {
                             {cartElements}
                         </div>
                         <div id="total-price">
-                            <h2 id="total-price-h2">Total:<br></br>$ 122,200,000</h2>
+                            <h2 className="total-price-h2">Total:</h2>
+                            <h4 className="total-price-h2">+ Shipping: $ 10,852.00</h4>
+                            <h2 className="total-price-h2 cart-price">{cartElements.length ? `$ ${totalPrice.toLocaleString()}.00`: ` $ 0.00`}</h2>
                             <button id="checkout">To Checkout</button>
                         </div>
                     </div>

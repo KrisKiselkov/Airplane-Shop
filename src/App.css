@@ -10,6 +10,10 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+button {
+  cursor: pointer;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -60,6 +64,7 @@ header.sticky {
   width: 3em;
   height: 3em;
   transition: all .3s;
+  cursor: pointer;
 }
 
 #cart-num {
@@ -122,8 +127,8 @@ header.sticky {
 
 #x {
   position: relative;
-  left: 8em;
-  cursor: pointer
+  left: 6.5em;
+  cursor: pointer;
 }
 
 #cart-h2 {
@@ -874,11 +879,13 @@ footer {
   background-color: #1644cc;
   color: #fff;
   margin-right: 1em;
+  transition: all .2s ease;
 }
 
 .plane-page-secondB {
   background-color: transparent;
   color: #1644cc;
+  transition: all .2s ease;
 }
 
 /* Alternatives */
@@ -1011,15 +1018,15 @@ footer {
 #added-container {
   display: flex;
   flex-direction: column;
-  height: 70%;
+  height: 67%;
   width: 100%;
-  overflow-y: scroll;
+  overflow-x: scroll;
 }
 
 #cart-plane {
   display: flex;
-  height: 150px;
-  width: 29em;
+  height: 138px;
+  width: 28em;
   margin: 5px;
   border: 3px solid #181818;
 }
@@ -1032,14 +1039,9 @@ footer {
 
 #cart-plane-desc {
   position: relative;
-  top: 8px;
   left: 2px;
-  width: 35%;
+  width: 38%;
   line-height: 20px;
-}
-
-#cart-plane-type {
-
 }
 
 #cart-plane-price {
@@ -1051,10 +1053,10 @@ footer {
   float: right;
   left: 1.2em;
   background-color: transparent;
-  width: 20.2%;
+  width: 17%;
   border-left: 3px solid;
-  text-align: center;
   transition: .2s background-color ease;
+  cursor: pointer;
 }
 
 #cart-remove:hover {
@@ -1062,26 +1064,33 @@ footer {
 }
 
 #cart-remove h1 {
-  margin-top: 2.3em;
+  text-align: center;
+  margin-top: 2.1em;
+  cursor: pointer;
 }
 
 #total-price {
   width: 100%;
-  height: 30%;
+  height: 33%;
   border-top: 2px dashed #181818; 
   margin: 5px;
 }
 
-#total-price-h2 {
+.total-price-h2 {
   position: relative;
   left: .5em;
-  line-height: 47px;
+  top: 6px;
+  line-height: 18px;
+}
+
+.cart-price {
+  font-size: 28px;
 }
 
 #checkout {
   position: relative;
   right: .5em;
-  top: -5em;
+  bottom: 5.7em;
   height: 2.5em;
   width: 10em;
   float: right;

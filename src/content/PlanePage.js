@@ -32,6 +32,30 @@ export function PlanePage() {
     const addPlaneFunc = (plane) => {
         dispatch(addItem(plane))
     };
+
+    const mouseOverBtn = () => {
+        const prmBtn = document.querySelector('.plane-page-primaryB');
+        const scdBtn = document.querySelector('.plane-page-secondB');
+
+        const mouseOver = () => {
+            prmBtn.style.backgroundColor='transparent';
+            prmBtn.style.color='#1644cc';
+
+            scdBtn.style.backgroundColor='#1644cc';
+            scdBtn.style.color='#fff';
+        };
+
+        const mouseOut = () => {
+            prmBtn.style.backgroundColor='#1644cc';
+            prmBtn.style.color='#fff';
+
+            scdBtn.style.backgroundColor='transparent';
+            scdBtn.style.color='#1644cc';
+        }
+
+        prmBtn.addEventListener('mouseover', mouseOver);
+        prmBtn.addEventListener('mouseout', mouseOut);
+    };
     
     const { fullType, price, alt, description } = plane[0];
 
@@ -65,7 +89,7 @@ export function PlanePage() {
                         </ul>
                     </div>
 
-                    <button className="plane-page-primaryB plane-btn">Buy Now</button>
+                    <button className="plane-page-primaryB plane-btn" onMouseOver={mouseOverBtn}>Buy Now</button>
                     <button className="plane-page-secondB plane-btn" onClick={() => addPlaneFunc(plane[0])}>Add To Cart</button>
                 </div>
             </section>

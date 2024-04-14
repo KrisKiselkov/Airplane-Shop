@@ -39,7 +39,7 @@ export function Nav() {
                         <NavLink to={'/boeing'} className='nav-a'><li>Boeing</li></NavLink>
                         
                     </ul>
-                    <Cart openCart={openCart} cartUse={cartUse}/>
+                    <Cart openCart={openCart} cartUse={cartUse} cart={cartState.cart}/>
                     <CartContainer openCart={openCart} cartUse={cartUse} cart={cartState.cart} dispatch={cartDispatch}/>
                 </nav>
             </header>
