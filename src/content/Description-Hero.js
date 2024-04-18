@@ -48,6 +48,10 @@ export function DescriptionHero() {
                 </div>
             </section>
 
+            <section id='brief-rating'>
+                
+            </section>
+
             <section id='best-sell'>
                 <h1 id='best-h1'>Best Sellers</h1>
                 <div id='best-planes'>

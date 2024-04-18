@@ -130,7 +130,7 @@ export function Testimonials() {
                     <div className="main-pic">
                         <img src={fifthPh} alt='profile' className='client-image'></img>
                         <p className='clients-text'>Lorem ipsum sit dolor amet magna aliqua consectetur. Lorem ipsum sit dolor amet magna aliqua consectetur.</p>
-                        <h2 className='client-name'>Valio Plamenov</h2>
+                        <h2 className='client-name'>Rumen Radev</h2>
                     </div>
 
                     <div className="sec-pic">                        

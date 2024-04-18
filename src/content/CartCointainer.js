@@ -10,9 +10,7 @@ export function CartContainer(props) {
     const [ cartElements, setCartElements ] = useState([]);
 
     const [totalPrice, setTotalPrice] = useState(0);
-
-    console.log(cart)
-    console.log(cartElements)
+    
     const removeElement = (id) => {
         const newCartElements = cartElements.filter(plane => plane !== id);
         setCartElements(newCartElements);

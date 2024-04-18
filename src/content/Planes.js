@@ -81,7 +81,9 @@ export function Planes() {
         const h = document.getElementById('all-h3');
         const col = document.getElementById('collection');
 
-        const onClick = () => {
+        
+
+        h.addEventListener('click', () => {if (filteredPlanes.length > 8) {
             if (col.style.height === '620px') {
                 col.style.height = 'auto';
                 h.innerHTML = 'See Less';
@@ -89,10 +91,12 @@ export function Planes() {
                 col.style.height = '620px';
                 h.innerHTML = 'See All';
             }
-        }
-
-        h.addEventListener('click', onClick);
+    }});
     }
+    const h = document.getElementById('all-h3');
+    const see = () => filteredPlanes > 8 ? h.innerHTML='See All' : h.innerHTML='h';
+    console.log(filteredPlanes.length)
+
 
     return (
         <>
@@ -127,7 +131,7 @@ export function Planes() {
             <section id='collection'>
                 {planeFunc()}
             </section>
-            <h3 id='all-h3' onClick={planeOverflow}>See All</h3>
+            <h3 id='all-h3' onClick={planeOverflow}>{filteredPlanes > 8 ? '' : 'See All'}</h3>
         </>
     )
 }

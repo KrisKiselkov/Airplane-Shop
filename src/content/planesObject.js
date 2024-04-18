@@ -94,7 +94,7 @@ export const planesObject = [
         description: ['Lorem ipsum aliqua magna sit amet ver dolor.Lorem ipsum aliqua magna sit amet ver dolor.' ,'2 years', '38.7m x 35.1m', '151 pax'],
         brand: 'Airbus',
         model: 'Commercial',
-        price: 40000000,
+        price: 80000000,
         alt: 'A220',
         id: 220
     },

@@ -79,13 +79,13 @@ export function PlanePage() {
                         <p id="plane-page-Mp">{description[0]}</p>
                         <br></br>
                         <ul id="plane-page-ul" key={`${id}`}>
-                            <li key={`${id}${description[1]}`}>Age: {description[1]}</li>
+                            <li key={`${id}${description[1]}`}>Age: <span>{description[1]}</span></li>
                             <br></br>
 
-                            <li key={`${id}${description[2]}`}>Size: {description[2]}</li>
+                            <li key={`${id}${description[2]}`}>Size: <span>{description[2]}</span></li>
                             <br></br>
 
-                            <li key={`${id}${description[3]}`}>Capacity: {description[3]}</li>
+                            <li key={`${id}${description[3]}`}>Capacity: <span>{description[3]}</span></li>
                         </ul>
                     </div>
 

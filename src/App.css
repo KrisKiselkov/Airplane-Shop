@@ -841,6 +841,7 @@ footer {
 #plane-page-h3 {
   position: relative;
   top: .7em;
+  color: #1644cc;
 }
 
 #plane-page-Mp {
@@ -850,6 +851,11 @@ footer {
 #plane-page-ul {
   margin-top: -1.3em;
   margin-left: -1.2em;
+}
+
+#plane-page-ul span {
+  color: #1644cc;
+  font-weight: bold;
 }
 
 #plane-page-ul li {
