@@ -5,6 +5,9 @@ import boeing from '../content/images/Boeing_full_logo.svg.png';
 import { planesObject } from "../content/planesObject";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import ryanair from "../content/images/Ryanair-Logo.png";
+import qatar from "../content/images/Qatar.png"; 
+import emirates from "../content/images/emirates.png";
 
 
 export function Boeing() {
@@ -121,6 +124,15 @@ export function Boeing() {
                         <h2>#2</h2>
                         <p>Top Rank</p>
                     </div>
+                </div>
+            </section>
+
+            <section id="partners-hero">
+                <h1 id="partners-h1">Partners</h1>
+                <div id="all-partners">
+                    <img src={ryanair} className="p-img"></img>
+                    <img src={emirates} className="p-img"></img>
+                    <img src={qatar} className="p-img"></img>
                 </div>
             </section>
 

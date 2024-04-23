@@ -2,8 +2,8 @@ import ryanair from "./images/Ryanair-Logo.png";
 import wizzair from "./images/WizzAir.png";
 import qatar from "./images/Qatar.png";
 import bulgariair from "./images/BulgariaAir.png"; 
-import emirates from "./images/emirates.png"
-import singapore from "./images/singapore.png"
+import emirates from "./images/emirates.png";
+import singapore from "./images/singapore.png";
 
 
 export function Partners() {

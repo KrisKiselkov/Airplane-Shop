@@ -762,7 +762,6 @@ hr{
 
 #all-partners {
   display: flex;
-  background-color: #181818;
   justify-content: space-around;
 }
 
@@ -1036,7 +1035,7 @@ footer {
   grid-template-rows: 3fr 1fr;
   gap: 15px;
   position: relative;
-  top: 11em;
+  top: 14em;
   height: 500px;
   width: 82%;
   margin: 0 auto;
