@@ -128,7 +128,7 @@ export function Boeing() {
             </section>
 
             <section id="partners-hero">
-                <h1 id="partners-h1">Partners</h1>
+                <h1 id="partners-h1">Boeing Clients</h1>
                 <div id="all-partners">
                     <img src={ryanair} className="p-img"></img>
                     <img src={emirates} className="p-img"></img>

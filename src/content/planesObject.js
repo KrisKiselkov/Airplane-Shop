@@ -23,8 +23,8 @@ export const planesObject = [
     },
     {
         image: require('./images/737MAX.png'),
-        fullType: 'Boeing 737-8200',
-        type: 'B737-8200',
+        fullType: 'Boeing 737 MAX 8',
+        type: 'B737 MAX 8',
         brand: 'Boeing',
         model: 'Commercial',
         description: ['Lorem ipsum aliqua magna sit amet ver dolor.Lorem ipsum aliqua magna sit amet ver dolor.' ,'4 years', '40m x 36m', '197 pax'],
@@ -137,7 +137,7 @@ export const planesObject = [
         type: 'A350-1000',
         brand: 'Airbus',
         model: 'Commercial',
-        description: ['Lorem ipsum aliqua magna sit amet ver dolor.Lorem ipsum aliqua magna sit amet ver dolor.' ,'1 years', '73.79m x 65m', '410 pax'],
+        description: ['Lorem ipsum aliqua magna sit amet ver dolor.Lorem ipsum aliqua magna sit amet ver dolor.' ,'1 year', '73.79m x 65m', '410 pax'],
         price: 366000000,
         alt: 'A350',
         id: 350

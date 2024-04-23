@@ -772,7 +772,7 @@ hr{
   width: 110px;
   object-fit: contain;
   opacity: .6;
-  transition: opacity .2 ease;
+  transition: opacity .3s ease;
 }
 
 .p-img:hover {

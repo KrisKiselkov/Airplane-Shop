@@ -5,6 +5,9 @@ import airbus from '../content/images/1200px-Airbus_logo_2017.png';
 import { planesObject } from "../content/planesObject";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import wizzair from "../content/images/WizzAir.png";
+import singapore from "../content/images/Qatar.png"; 
+import bulgariair from "../content/images/BulgariaAir.png";
 
 
 export function Airbus() {
@@ -121,6 +124,15 @@ export function Airbus() {
                         <h2>#1</h2>
                         <p>Top Rank</p>
                     </div>
+                </div>
+            </section>
+
+            <section id="partners-hero">
+                <h1 id="partners-h1">Airbus Clients</h1>
+                <div id="all-partners">
+                    <img src={wizzair} className="p-img"></img>
+                    <img src={bulgariair} className="p-img"></img>
+                    <img src={singapore} className="p-img"></img>
                 </div>
             </section>
 
