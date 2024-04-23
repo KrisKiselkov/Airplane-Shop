@@ -351,7 +351,7 @@ main {
   flex-wrap: wrap;
   gap: 0px 38px;
   position: relative;
-  top: 7em;
+  top: 11em;
   width: 82%;
   height: 620px;
   margin: 0 auto;
@@ -361,7 +361,7 @@ main {
 #filter-btns {
   position: relative;
   text-align: center;
-  top: 3em;
+  top: 5em;
   width: 82%;
   height: 0px;  
   margin: 0 auto;
@@ -375,7 +375,7 @@ main {
   height: 30px;
   width: 8.5em;
   padding: 0 8px;
-  margin-right: 2em;
+  margin-right: 2.5em;
   letter-spacing: 1px;
   border: 3px solid transparent;
   border-radius: 12px;
@@ -448,7 +448,7 @@ hr{
 
 #all-h3 {
   position: relative;
-  top: 5em;
+  top: 9em;
   width: 5em;
   left: 47%;
   text-decoration: underline;
@@ -464,7 +464,7 @@ hr{
 #description {
   display: flex;
   position: relative;
-  top: 11.5em;
+  top: 14em;
   width: 82%;
   height: 480px;
   background-color: #61b0fb3a;
@@ -547,6 +547,62 @@ hr{
   left: 17em;
   height: 10.5em;
   width: 19em;
+}
+
+
+/* BRIEF RATING */
+#brief-rating {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  top: 18.5em;
+  height: 220px;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 150px 10px 150px 10px;
+  background-color: #1644cc;
+  z-index: 10;
+}
+
+.pre-circ {
+  margin-top: 1.5em;
+  background-color: #7fc1ff;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+}
+
+.pre-circ h1 {
+  position: relative;
+  top: 1.05em;
+  font-size: 40px;
+  margin: auto;
+  text-align: center;
+}
+
+.pre-txt {
+  position: relative;
+  top: .1em;
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+}
+
+.sold-circ {
+  margin-left: 1.3em;
+}
+
+.sold-txt {
+  margin-left: 10px;
+}
+
+.years-circ {
+  margin-left: 1.3em;
+}
+
+.years-txt {
+  position: relative;
+  right: 1.4em;
 }
 
 
@@ -691,6 +747,37 @@ hr{
 
 .swiper-pagination {
   margin-bottom: 1em;
+}
+
+#partners-hero {
+  height: 190px;
+}
+
+#partners-h1 {
+  position: relative;
+  top: 8.8em;
+  text-align: center;
+  font-size: 30px;
+}
+
+#all-partners {
+  display: flex;
+  background-color: #181818;
+  justify-content: space-around;
+}
+
+.p-img {
+  aspect-ratio: 3/2.5;
+  position: relative;
+  top: 16.7em;
+  width: 110px;
+  object-fit: contain;
+  opacity: .6;
+  transition: opacity .2 ease;
+}
+
+.p-img:hover {
+  opacity: 1;
 }
 
 

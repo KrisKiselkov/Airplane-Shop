@@ -49,7 +49,20 @@ export function DescriptionHero() {
             </section>
 
             <section id='brief-rating'>
-                
+                <div className='pre-div'>
+                    <div className='pre-circ sold-circ'><h1>450+</h1></div>
+                    <div className='pre-txt sold-txt'>Planes Sold</div>
+                </div>
+
+                <div className='pre-div'>
+                    <div className='pre-circ'><h1>4.9</h1></div>
+                    <div className='pre-txt'>Rating</div>
+                </div>
+
+                <div className='pre-div'>
+                    <div className='pre-circ years-circ'><h1>11+</h1></div>
+                    <div className='pre-txt years-txt'>Years of Experince</div>
+                </div>
             </section>
 
             <section id='best-sell'>
