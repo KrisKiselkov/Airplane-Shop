@@ -1193,6 +1193,11 @@ footer {
 
 /* RESPONSIVE DESIGN */
 @media screen and (max-width: 1024px) {
+  /* Nav */
+  #nav-list {
+    right: 20em;
+  }
+  
   /* Landing Home */
   #landing-hero {
     height: 540px;
@@ -1270,5 +1275,25 @@ footer {
 
   #para-desc-p {
     width: 21em;
+  }
+
+
+  /* Airbus */
+  #air-bo-title {
+    top: 14.5em;
+  }
+
+  .about-airbo {
+    height: 525px;
+  }
+
+  .ab-airbo-h1 {
+    position: relative;
+    top: -10px;
+    font-size: 35px;
+  }
+
+  .ab-airbo-p {
+    top: -1em;
   }
 }
