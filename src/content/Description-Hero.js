@@ -34,9 +34,11 @@ export function DescriptionHero() {
     return (
         <>
             <section id="description">
-                <img src={plane} alt='plane' id='plane-2'></img>
-                <img src={cloud} alt='cloud' id='cloud-1'></img>
-                <img src={cloud} alt='cloud' id='cloud-2'></img>
+                <div id='desc-img'>
+                    <img src={plane} alt='plane' id='plane-2'></img>
+                    <img src={cloud} alt='cloud' id='cloud-1'></img>
+                    <img src={cloud} alt='cloud' id='cloud-2'></img>
+                </div>
 
                 <div id='para-desc'>
                     <h1 id='para-desc-h1'>DEDICATED TO<br></br><span className='qa-res'>Quality</span> & <span className='qa-res'>Results</span></h1>

@@ -267,6 +267,7 @@ header.sticky {
 
 #brief-hero {
   display: flex;
+  justify-content: space-around;
   position: relative;
   width: 82%;
   height: 10em;
@@ -296,7 +297,7 @@ header.sticky {
 
 .desc-box h3 {
   position: relative;
-  left: .7em;
+  right: 1em;
   top: -.3em;
   font-size: 23px;
 }
@@ -304,28 +305,9 @@ header.sticky {
 .desc-box p {
   position: relative;
   top: -2em;
-  left: 1em;
+  right: 1.3em;
   width: 210px;
   line-height: 21px;
-}
-
-.support {
-  position: relative;
-  left: 5.5em;
-}
-
-.sup {
-  position: relative;
-  left: 5.5em;
-}
-
-.delivery {
-  position: relative;
-  left: 11.5em;
-}
-.del {
-  position: relative;
-  left: 11.5em;
 }
 
 
@@ -472,6 +454,10 @@ hr{
   border-radius: 22px;
 }
 
+#desc-img {
+  width: 52%;
+}
+
 #plane-2 {
   width: 35em;
   height: 21em;
@@ -539,6 +525,7 @@ hr{
   position: absolute;
   height: 11em;
   width: 20em;
+  left: 0;
 }
 
 #cloud-2 {
@@ -1201,4 +1188,87 @@ footer {
 #checkout:hover {
   background-color: #fff;
   color: #1644cc;
+}
+
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 1024px) {
+  /* Landing Home */
+  #landing-hero {
+    height: 540px;
+  }
+ 
+  #title {
+    font-size: 50px;
+    left: 2em;
+  }
+
+  #short-desc {
+    width: 21em;
+    font-size: 15px;
+    left: 7em;
+    top: 5.5em;
+  }
+  
+  #plane {
+    width: 30em;
+    top: -2em;
+  }
+
+  #landing-con {
+    top: 6em;
+  }
+
+
+  /* Brief Desc */
+  #brief-hero {
+    height: 200px;
+    right: 1em;
+  }
+
+  .icons {
+    top: 4.5em;
+    padding: 1.4em 2em;
+  }
+
+  .desc-box {
+    position: relative;
+    left: 2.2em;
+    top: 3.8em;
+    margin-right: 2em;
+  }
+
+  .desc-box h3 {
+    line-height: 25px;
+    margin-bottom: 30px;
+  }
+
+  
+  /* Description Hero */
+  #plane-2 {
+    width: 26em;
+    height: 20em;
+  }
+
+  #cloud-1 {
+    width: 13em;
+  }
+
+  #cloud-2 {
+    width: 13em;
+    left: 13em;
+  }
+
+  #para-desc {
+    position: relative;
+    right: 2.5em;
+  }
+
+  #para-desc-h1 {
+    font-size: 37px;
+  }
+
+  #para-desc-p {
+    width: 21em;
+  }
 }
