@@ -6,8 +6,10 @@ import { planesObject } from "../content/planesObject";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import wizzair from "../content/images/WizzAir.png";
-import singapore from "../content/images/Qatar.png"; 
+import singapore from "../content/images/singapore.png"; 
 import bulgariair from "../content/images/BulgariaAir.png";
+import emirates from "../content/images/emirates.png";
+import qatar from "../content/images/Qatar.png" 
 
 
 export function Airbus() {
@@ -132,7 +134,9 @@ export function Airbus() {
                 <div id="all-partners">
                     <img src={wizzair} className="p-img"></img>
                     <img src={bulgariair} className="p-img"></img>
+                    <img src={emirates} className="p-img"></img>
                     <img src={singapore} className="p-img"></img>
+                    <img src={qatar} className="p-img"></img>
                 </div>
             </section>
 

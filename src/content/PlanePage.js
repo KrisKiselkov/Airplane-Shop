@@ -5,6 +5,8 @@ import { Nav } from "./Nav";
 import { Footer } from './Footer';
 import { addItem } from "./cartSlice";
 import { store } from "../store";
+import { Newsletter } from "./Newsletter";
+
 
 export function PlanePage() {
     const dispatch = store.dispatch;
@@ -112,6 +114,8 @@ export function PlanePage() {
                     }
                 </div>
             </section>
+
+            <Newsletter />
 
             <Footer />
         </>

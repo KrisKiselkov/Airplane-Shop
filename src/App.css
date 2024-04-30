@@ -986,6 +986,7 @@ footer {
   top: 9em;
   width: 90%;
   margin: 0 auto;
+  margin-bottom: -3em;
 }
 
 #plane-page-alt h2 {
@@ -1175,6 +1176,10 @@ footer {
   line-height: 18px;
 }
 
+.shipping-h4 {
+  color: #1644cc;
+}
+
 .cart-price {
   font-size: 28px;
 }
@@ -1187,13 +1192,13 @@ footer {
   width: 10em;
   float: right;
   font-size: 20px;
-  background-color: #181818;
+  background-color: #1644cc;
   color: #fff;
-  border: 3px solid #181818;
+  border: 3px solid #1644cc;
   transition: all .2s ease;
 }
 
 #checkout:hover {
   background-color: #fff;
-  color: #181818;
+  color: #1644cc;
 }

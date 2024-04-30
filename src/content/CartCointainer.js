@@ -58,7 +58,7 @@ export function CartContainer(props) {
                         </div>
                         <div id="total-price">
                             <h2 className="total-price-h2">Total:</h2>
-                            <h4 className="total-price-h2">+ Shipping: $ 10,852.00</h4>
+                            <h4 className="total-price-h2 shipping-h4">+ Shipping: $ 10,852.00</h4>
                             <h2 className="total-price-h2 cart-price">{cartElements.length ? `$ ${totalPrice.toLocaleString()}.00`: ` $ 0.00`}</h2>
                             <button id="checkout">To Checkout</button>
                         </div>

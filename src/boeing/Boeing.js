@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import ryanair from "../content/images/Ryanair-Logo.png";
 import qatar from "../content/images/Qatar.png"; 
 import emirates from "../content/images/emirates.png";
+import singapore from "../content/images/singapore.png"
 
 
 export function Boeing() {
@@ -133,6 +134,7 @@ export function Boeing() {
                     <img src={ryanair} className="p-img"></img>
                     <img src={emirates} className="p-img"></img>
                     <img src={qatar} className="p-img"></img>
+                    <img src={singapore} className="p-img"></img>
                 </div>
             </section>
 
