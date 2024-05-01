@@ -1251,8 +1251,9 @@ footer {
   
   /* Description Hero */
   #plane-2 {
-    width: 26em;
-    height: 20em;
+    top: 7em;
+    width: 25em;
+    height: 17em;
   }
 
   #cloud-1 {
@@ -1295,5 +1296,28 @@ footer {
 
   .ab-airbo-p {
     top: -1em;
+  }
+
+
+  /* Plane Page */
+  .plane-btn {
+    display: block;
+    bottom: 7.5em;
+    left: 14.5em;
+  }
+
+  .plane-page-primaryB {
+    margin-right: 0em;
+    margin-bottom: .5em;
+  }
+
+  #alt-container {
+    overflow-x: scroll;
+    gap: 20px;
+    padding: 20px 20px 0px 20px;
+  }
+
+  .foo-txt {
+    left: 5em;
   }
 }
