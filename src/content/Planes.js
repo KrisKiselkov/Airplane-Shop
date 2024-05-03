@@ -33,6 +33,12 @@ export function Planes() {
             filteredResult = planesObject;
         }
 
+        if (filteredPlanes.length <= 8) {
+            document.getElementById('collection').style.height = 'auto';
+        } else {
+            document.getElementById('collection').style.height = '620px';
+        }
+
         setFilteredPlanes(filteredResult);
     };
 
@@ -53,7 +59,7 @@ export function Planes() {
 
     useEffect(() => {
     filterPlanes();
-    }, [filteredMaker, filteredType, filteredPrice]);
+    }, [filteredMaker, filteredType, filteredPrice, filteredPlanes.length]);
 
     function planeFunc() {
         try {
@@ -81,20 +87,32 @@ export function Planes() {
         const h = document.getElementById('all-h3');
         const col = document.getElementById('collection');
 
-        
-
-        h.addEventListener('click', () => {if (filteredPlanes.length > 8) {
-            if (col.style.height === '620px') {
-                col.style.height = 'auto';
-                h.innerHTML = 'See Less';
-            } else {
-                col.style.height = '620px';
-                h.innerHTML = 'See All';
+        const overflow = () => {
+            if (filteredPlanes.length > 8) {
+                if (col.style.height === '620px') {
+                    col.style.height = 'auto';
+                    h.innerHTML = 'See Less';
+                } else {
+                    col.style.height = '620px';
+                    h.innerHTML = 'See All';
+                }
             }
-    }});
+        }
+
+        h.addEventListener('click', overflow);
     }
-    const h = document.getElementById('all-h3');
-    const see = () => filteredPlanes > 8 ? h.innerHTML='See All' : h.innerHTML='h';
+
+    const colHeightChange = () => {
+        const col = document.getElementById('collection');
+
+        const onChange = () => {
+            if (filteredPlanes.length <= 8) {
+                col.style.height = '300px';
+            }
+        };
+
+        col.addEventListener('change', onChange);
+    }
     console.log(filteredPlanes.length)
 
 
@@ -131,7 +149,7 @@ export function Planes() {
             <section id='collection'>
                 {planeFunc()}
             </section>
-            <h3 id='all-h3' onClick={planeOverflow}>{filteredPlanes > 8 ? '' : 'See All'}</h3>
+            <h3 id='all-h3' onClick={planeOverflow}>{filteredPlanes.length > 8 ? 'See All' : ''}</h3>
         </>
     )
 }
