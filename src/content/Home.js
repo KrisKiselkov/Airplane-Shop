@@ -4,20 +4,20 @@ import plane from './images/plane.png'
 export function Home() {
     return (
         <>
-            <section id="landing-hero">
-                <h1 id="title">Find your<br></br> dream <span>Plane</span></h1>
+            <div id='landing-bg'></div>
+                <section id="landing-hero">
+                    <h1 id="title">Find your<br></br> dream <span>Plane</span></h1>
+                    
+                    <img src={plane} id='plane'></img>
                 
-                <img src={plane} id='plane'></img>
-            
-                <div id='short-desc'>
-                    <p>Lorem ipsum dolor sit amet, consectetur dolore magna aliqua.</p>
-                </div>
+                    <div id='short-desc'>
+                        <p>Lorem ipsum dolor sit amet, consectetur dolore magna aliqua.</p>
+                    </div>
 
-                <button id='landing-con'>Contact Us</button>
-            </section>
-
+                    <button id='landing-con'>Contact Us</button>
+                </section>
             <section id='brief-hero'>
-            <svg xmlns="http://www.w3.org/2000/svg" height="32" width="28" viewBox="0 0 448 512" className='icons secure'><path fill="#fff" d="M144 144v48H304V144c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192V144C80 64.5 144.5 0 224 0s144 64.5 144 144v48h16c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V256c0-35.3 28.7-64      64-64H80z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" height="32" width="32" viewBox="0 0 448 512" className='icons secure'><path fill="#fff" d="M144 144v48H304V144c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192V144C80 64.5 144.5 0 224 0s144 64.5 144 144v48h16c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V256c0-35.3 28.7-64      64-64H80z"/></svg>
 
             <div className='desc-box'>
                 <h3>Secure Payment</h3>

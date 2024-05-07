@@ -148,11 +148,19 @@ header.sticky {
   color: #1644cc;
 }
 
+#landing-bg {
+  background-image: url(./content/images/cloud-1.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.29;
+}
+
 #landing-hero {
   position: relative;
   height: 37.6em;
-  background: linear-gradient(to bottom, #fff, #e7f4ff);
-  box-shadow: 0px 10px 10px 0px #e7f4ff;
 }
 
 #title {
@@ -663,6 +671,13 @@ hr{
   border: 3px solid #1644cc; 
   border-radius: 100px;
   margin: 0 auto;
+}
+
+.main-image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
 }
 
 .client-image {
@@ -1200,6 +1215,10 @@ footer {
   }
   
   /* Landing Home */
+  #landing-bg {
+    height: 600px;
+  }
+
   #landing-hero {
     height: 540px;
   }
@@ -1217,8 +1236,8 @@ footer {
   }
   
   #plane {
-    width: 30em;
-    top: -2em;
+    width: 33em;
+    top: -3em;
   }
 
   #landing-con {
@@ -1251,7 +1270,7 @@ footer {
 
   
   #collection {
-    justify-content: ;
+    left: 1.3em;
   }
 
   /* Description Hero */
@@ -1324,5 +1343,150 @@ footer {
 
   .foo-txt {
     left: 5em;
+  }
+}
+
+
+/* TABLET SIZE */
+@media screen and (max-width: 768px) {
+  #nav-list {
+    display: none;
+  }
+
+  #landing-bg {
+    height: 47em;
+  }
+  
+  #landing-hero {
+    top: 6.5em;
+    height: 43.5em;
+  }
+
+  #title {
+    margin: 0 auto;
+    text-align: center;
+    left: 0em;
+  }
+
+  #short-desc {
+    top: 7.5em;
+    left: 0em;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  #landing-con {
+    left: 14.5em;
+    top: 7.2em;
+  }
+
+  #plane {
+    display: none;
+  }
+
+
+  #brief-hero {
+    height: 18.5em;
+  }
+
+  .icons {
+    position: relative;
+    left: 5em;
+    top: 6.5em;      
+  }
+
+  .desc-box h3 {
+    top: 5em;
+    left: -1.7em;
+    right: 0em;
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .desc-box p {
+    display: none;
+  }
+
+  #collection {
+    left: 3em;
+  }
+
+
+  #description {
+    display: block;
+    height: 52.5em;
+  }
+
+  #desc-img {
+    width: 100%;
+  }
+
+  #plane-2 {
+    top: 3em;
+    left: 2em;
+    height: 22em;
+    width: 35em;
+  }
+
+  #cloud-1 {
+    left: 2em;
+  }
+
+  #cloud-2 {
+    left: 23.5em;
+  }
+
+  #para-desc {
+    top: 4em;
+    width: 100%;
+    text-align: center;
+  }
+
+  #para-desc-p {
+    top: 0em;
+    margin: 0 auto;
+  }
+
+  #para-desc button {
+    top: 2em;
+    left: 43px;
+  }
+
+
+  #brief-rating {
+    height: 44em;
+    width: 30em;
+    flex-direction: column;
+  }
+
+  .pre-div {
+    margin: 0 auto;
+  }
+
+  .sold-circ {
+    margin-left: 1.4em;
+  }
+
+  .sold-txt {
+    margin-left: 8px;
+  }
+
+  .years-circ {
+    margin-left: 4em;
+  }
+
+  .years-txt {
+    right: 0em;
+  }
+
+
+  /* TESTIMONIALS */
+  .client-image {
+    display: none;
+  }
+
+
+  #foo-container {
+    display: none;
   }
 }

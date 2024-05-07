@@ -32,7 +32,7 @@ export function Testimonials() {
             <div className='clients swiper-wrapper'>
                 <div className='fr-client swiper-slide'>
                     <div className="main-pic">
-                        <img src={krisPh} alt='profile' className='client-image'></img>
+                        <img src={krisPh} alt='profile' className='main-image'></img>
                         <p className='clients-text'>Lorem ipsum sit dolor amet magna aliqua consectetur. Lorem ipsum sit dolor amet magna aliqua consectetur.</p>
                         <h2 className='client-name'>Kristian Kiselkov</h2>
                     </div>
@@ -56,7 +56,7 @@ export function Testimonials() {
 
                 <div className='sc-client swiper-slide'>
                     <div className="main-pic">
-                        <img src={secondPh} alt='profile' className='client-image'></img>
+                        <img src={secondPh} alt='profile' className='main-image'></img>
                         <p className='clients-text'>Lorem ipsum sit dolor amet magna aliqua consectetur. Lorem ipsum sit dolor amet magna aliqua consectetur.</p>
                         <h2 className='client-name'>Boris Petrov</h2>
                     </div>
@@ -80,7 +80,7 @@ export function Testimonials() {
 
                 <div className='trd-client swiper-slide'>
                     <div className="main-pic">
-                        <img src={thirdPh} alt='profile' className='client-image'></img>
+                        <img src={thirdPh} alt='profile' className='main-image'></img>
                         <p className='clients-text'>Lorem ipsum sit dolor amet magna aliqua consectetur. Lorem ipsum sit dolor amet magna aliqua consectetur.</p>
                         <h2 className='client-name'>Daniel Kiselkov</h2>
                     </div>
@@ -104,7 +104,7 @@ export function Testimonials() {
 
                 <div className='frth-client swiper-slide'>
                     <div className="main-pic">
-                        <img src={forthPh} alt='profile' className='client-image'></img>
+                        <img src={forthPh} alt='profile' className='main-image'></img>
                         <p className='clients-text'>Lorem ipsum sit dolor amet magna aliqua consectetur. Lorem ipsum sit dolor amet magna aliqua consectetur.</p>
                         <h2 className='client-name'>Rosen Plevneliev</h2>
                     </div>
@@ -128,7 +128,7 @@ export function Testimonials() {
 
                 <div className='trd-client swiper-slide'>
                     <div className="main-pic">
-                        <img src={fifthPh} alt='profile' className='client-image'></img>
+                        <img src={fifthPh} alt='profile' className='main-image'></img>
                         <p className='clients-text'>Lorem ipsum sit dolor amet magna aliqua consectetur. Lorem ipsum sit dolor amet magna aliqua consectetur.</p>
                         <h2 className='client-name'>Rumen Radev</h2>
                     </div>
