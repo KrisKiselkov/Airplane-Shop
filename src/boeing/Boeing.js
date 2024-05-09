@@ -31,6 +31,13 @@ export function Boeing() {
             filteredResult = filteredResult.filter(maker => maker.model === filteredType);
         }
 
+        if (filteredPlanes.length <= 4) {
+            document.getElementById('collection').style.height = 'auto';
+        } else {
+            document.getElementById('collection').style.height = '620px';
+        }
+
+
         setFilteredPlanes(filteredResult);
     };
 
@@ -46,7 +53,7 @@ export function Boeing() {
 
     useEffect(() => {
     filterPlanes();
-    }, [filteredType, filteredPrice]);
+    }, [filteredType, filteredPrice, filteredPlanes.length]);
 
     function planeFunc() {
         try {
@@ -70,8 +77,28 @@ export function Boeing() {
         }
     }
 
+    const planeOverflow = () => {
+        const h = document.getElementById('all-h3');
+        const col = document.getElementById('collection');
+
+        const overflow = () => {
+            if (filteredPlanes.length > 4) {
+                if (col.style.height === '620px') {
+                    col.style.height = 'auto';
+                    h.innerHTML = 'See Less';
+                } else {
+                    col.style.height = '620px';
+                    h.innerHTML = 'See All';
+                }
+            }
+        }
+
+        h.addEventListener('click', overflow);
+    }
+
+
     return (
-        <>
+        <div id="boeing-sect">
             <Nav />
             <div id="title-hero">
                 <div id="plane-background"></div>
@@ -98,6 +125,7 @@ export function Boeing() {
             <section id='collection'>
                 {planeFunc()}
             </section>
+            <h3 id='all-h3' onClick={planeOverflow}>{filteredPlanes.length > 4 ? 'See All' : ''}</h3>
 
             <section className="about-airbo">
                 <div className="m-ab-airbo">
@@ -140,6 +168,6 @@ export function Boeing() {
 
             <Newsletter />
             <Footer />
-        </>
+        </div>
     )
 }

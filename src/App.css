@@ -1288,6 +1288,17 @@ footer {
 
 
 /* RESPONSIVE DESIGN */
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  #boeing-sect #all-h3 {
+    display: none;
+  }
+
+  #airbus-sect #all-h3 {
+    display: none;
+  }
+}
+
+
 @media screen and (max-width: 1024px) {
   /* Nav */
   #nav-list {

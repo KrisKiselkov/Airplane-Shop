@@ -99,7 +99,7 @@ export function Airbus() {
 
 
     return (
-        <>
+        <div id="airbus-sect">
             <Nav />
             <div id="title-hero">
                 <div id="plane-background"></div>
@@ -171,6 +171,6 @@ export function Airbus() {
 
             <Newsletter />
             <Footer />
-        </>
+        </div>
     )
 }
