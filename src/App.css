@@ -1617,6 +1617,15 @@ footer {
     height: 350px;
   }
 
+  #plane-page-img {
+    position: relative;
+    left: 3.5em;
+    border-radius: 14px;
+    height: 100%;
+    width: 85%;
+    object-fit: contain;
+  }
+
   #description-container {
     width: 90%;
     margin: 0 auto;
