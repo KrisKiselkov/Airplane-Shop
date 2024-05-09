@@ -1576,6 +1576,10 @@ footer {
 
 
   /* AIRBUS */
+  #filter-btns {
+    left: .7em;
+  }
+  
   .about-airbo {
     grid-template-rows: 3fr 2fr;
     height: 600px;
