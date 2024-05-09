@@ -148,6 +148,86 @@ header.sticky {
   color: #1644cc;
 }
 
+
+/* MOBILE NAV */
+#hamburger {
+  position: relative;
+  top: -7.45em;
+  margin: 0 auto;
+  display: none;
+  width: 43px;
+  height: 38px;
+  appearance: none;
+  outline: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 10010;
+}
+
+#hamburger .bar, #hamburger::after, #hamburger::before {
+  content: '';
+  display: block;
+  border-radius: 10px;
+  width: 100%;
+  height: 5px;
+  background-color: #18181a;
+  margin: 5px 0px;
+  transition: all .3s;
+}
+
+#hamburger.is-active::before {
+  transform: rotate(-45deg) translate(-10px, 7.8px);
+}
+
+#hamburger.is-active::after {
+  transform: rotate(45deg) translate(-7px, -6px);
+}
+
+#hamburger.is-active .bar {
+  opacity: 0;
+}
+
+#mobile-nav {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  z-index: 98;
+  background-color: #fff;
+  padding-top: 120px;
+  transition: .4s;
+}
+
+#mobile-nav.is-active-info {
+  left: 0;
+}
+
+#mobile-nav-links {
+  list-style: none;
+  position: relative;
+  margin: 0 auto;
+  top: 1.6em;
+  right: 1.3em;
+}
+
+#mobile-nav li {
+  display: block;
+  text-align: center;
+  max-width: 200px;
+  padding: 12px 16px;
+  background-color: black;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 22px;
+  letter-spacing: .7px;
+  margin: 0px auto 35px auto;
+}
+
+
+
 #landing-bg {
   background-image: url(./content/images/cloud-1.png);
   position: absolute;
@@ -1353,6 +1433,10 @@ footer {
     display: none;
   }
 
+  #hamburger {
+    display: block;
+  }
+
   #landing-bg {
     height: 47em;
   }
@@ -1488,5 +1572,21 @@ footer {
 
   #foo-container {
     display: none;
+  }
+
+
+  /* AIRBUS */
+  .about-airbo {
+    grid-template-rows: 3fr 2fr;
+    height: 600px;
+  }
+  
+  .m-ab-airbo {
+    grid-row: 1/2;
+    grid-column: 1/3;
+  }  
+
+  .stats-airbo {
+    grid-template: 95px 95px / 1fr 1fr;
   }
 }

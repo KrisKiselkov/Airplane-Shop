@@ -102,19 +102,6 @@ export function Planes() {
         h.addEventListener('click', overflow);
     }
 
-    const colHeightChange = () => {
-        const col = document.getElementById('collection');
-
-        const onChange = () => {
-            if (filteredPlanes.length <= 8) {
-                col.style.height = '300px';
-            }
-        };
-
-        col.addEventListener('change', onChange);
-    }
-    console.log(filteredPlanes.length)
-
 
     return (
         <>

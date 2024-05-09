@@ -27,7 +27,26 @@ export function Nav() {
             cart.style.right = '2em'
             logo.style.left = '2em';
         }
-      })
+    })
+
+    const navClick = () => {
+        const ham = document.getElementById('hamburger');
+        const info = document.getElementById('mobile-nav');
+        const links = document.getElementById('mobile-nav-links'); 
+    
+        ham.addEventListener('click', () => {
+            ham.classList.toggle('is-active');
+            info.classList.toggle('is-active-info');
+            
+        })
+    
+        links.addEventListener('click', () => {
+            ham.classList.toggle('is-active');
+            info.classList.toggle('is-active-info');
+        })
+    }
+
+
     return (
         <>
             <header>
@@ -39,8 +58,21 @@ export function Nav() {
                         <NavLink to={'/boeing'} className='nav-a'><li>Boeing</li></NavLink>
                         
                     </ul>
+
+                    <button id="hamburger" onClick={navClick}>
+                        <div class="bar"></div>
+                    </button>
+
                     <Cart openCart={openCart} cartUse={cartUse} cart={cartState.cart}/>
                     <CartContainer openCart={openCart} cartUse={cartUse} cart={cartState.cart} dispatch={cartDispatch}/>
+                </nav>
+
+                <nav id="mobile-nav" onClick={navClick}>
+                    <ul id="mobile-nav-links">
+                        <NavLink to={'/'}><li>Home</li></NavLink>
+                        <NavLink to={'/airbus'}><li>Airbus</li></NavLink>
+                        <NavLink to={'/boeing'}><li>Boeing</li></NavLink>
+                    </ul>
                 </nav>
             </header>
         </>

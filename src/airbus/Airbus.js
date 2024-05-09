@@ -32,6 +32,13 @@ export function Airbus() {
             filteredResult = filteredResult.filter(maker => maker.model === filteredType);
         }
 
+        if (filteredPlanes.length <= 4) {
+            document.getElementById('collection').style.height = 'auto';
+        } else {
+            document.getElementById('collection').style.height = '620px';
+        }
+
+
         setFilteredPlanes(filteredResult);
     };
 
@@ -47,7 +54,7 @@ export function Airbus() {
 
     useEffect(() => {
     filterPlanes();
-    }, [filteredType, filteredPrice]);
+    }, [filteredType, filteredPrice, filteredPlanes.length]);
 
     function planeFunc() {
         try {
@@ -70,6 +77,26 @@ export function Airbus() {
             console.log(error);
         }
     }
+
+    const planeOverflow = () => {
+        const h = document.getElementById('all-h3');
+        const col = document.getElementById('collection');
+
+        const overflow = () => {
+            if (filteredPlanes.length > 4) {
+                if (col.style.height === '620px') {
+                    col.style.height = 'auto';
+                    h.innerHTML = 'See Less';
+                } else {
+                    col.style.height = '620px';
+                    h.innerHTML = 'See All';
+                }
+            }
+        }
+
+        h.addEventListener('click', overflow);
+    }
+
 
     return (
         <>
@@ -99,6 +126,8 @@ export function Airbus() {
             <section id='collection'>
                 {planeFunc()}
             </section>
+            <h3 id='all-h3' onClick={planeOverflow}>{filteredPlanes.length > 4 ? 'See All' : ''}</h3>
+
 
             <section className="about-airbo">
                 <div className="m-ab-airbo">
