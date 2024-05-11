@@ -90,7 +90,7 @@ header.sticky {
     width: 100%;
     height: 1000%;
     background-color: #00000075;
-    z-index: 888;
+    z-index: 999;
 }
 
 .no-overlay {
@@ -162,7 +162,7 @@ header.sticky {
   background: none;
   border: none;
   cursor: pointer;
-  z-index: 10010;
+  z-index: 998;
 }
 
 #hamburger .bar, #hamburger::after, #hamburger::before {
@@ -177,7 +177,7 @@ header.sticky {
 }
 
 #hamburger.is-active::before {
-  transform: rotate(-45deg) translate(-10px, 7.8px);
+  transform: rotate(-45deg) translate(-8px, 7px);
 }
 
 #hamburger.is-active::after {
@@ -186,6 +186,10 @@ header.sticky {
 
 #hamburger.is-active .bar {
   opacity: 0;
+}
+
+.navLink {
+  text-decoration: none;
 }
 
 #mobile-nav {
@@ -224,8 +228,14 @@ header.sticky {
   font-size: 22px;
   letter-spacing: .7px;
   margin: 0px auto 35px auto;
+  text-decoration: transparent;
 }
 
+li:visited {
+  text-decoration: none;
+  color: blue;
+  color: inherit; text-decoration: none;
+}
 
 
 #landing-bg {
@@ -423,7 +433,6 @@ main {
   position: relative;
   top: 11em;
   width: 82%;
-  min-height: 300px;
   height: 620px;
   margin: 0 auto;
   overflow: hidden;
@@ -679,6 +688,10 @@ hr{
 .years-txt {
   position: relative;
   right: 1.4em;
+}
+
+.years-txt br {
+  display: none;
 }
 
 
@@ -1302,7 +1315,7 @@ footer {
 @media screen and (max-width: 1024px) {
   /* Nav */
   #nav-list {
-    right: 20em;
+    right: 19em;
   }
   
   /* Landing Home */
@@ -1658,37 +1671,247 @@ footer {
   .plane-page-primaryB {
     margin-right: 1em;
   }
-
-  /*
-  #plane-page {
-  display: flex;
-  position: relative;
-  top: 6.5em;
-  margin: 0 auto;
-  width: 90%;
-  height: 410px;
 }
 
-#image-container {
-  width: 50%;
-}
+/* 375px */
+@media screen and (max-width: 375px) {
+  #logo {
+    width: 6em;
+    top: -3px;
+    left: .8em;
+  }
+  
+  #hamburger {
+    top: -5.75em;
+  }
 
-#plane-page-img {
-  position: relative;
-  border-radius: 14px;
-  height: 100%;
-  width: 98%;
-  object-fit: contain;
-}
+  #cart-button {
+    right: .8em;
+  }
 
-#description-container {
-  width: 50%;
-  border-radius: 14px;
-  background-color: #61b0fb3a;
-}
+  
+  #landing-bg {
+      height: 580px;
+    }
+    
+    #landing-hero {
+      height: 580px;
+      top: 4.5em
+    }
+  
+    #title {
+      font-size: 38px;
+    }    
+  
+    #short-desc {
+      top: 5.5em;
+      width: 270px;
+    }
+      
+    #landing-con {
+      top: 5.5em;
+      left: 5em;
+    }      
+  
+  
+    #brief-hero {
+      flex-direction: column;
+      height: 700px;
+      margin-bottom: 7em;
+      left: 1.8em;
+    }
+  
+    .icons {
+      top: 4em;
+    }
+  
+  .desc-box h3 {
+    top: -.5em;
+  }
+  
+  .desc-box p {
+    display: block;
+    text-align: center;
+    top: -1.5em;
+  }
 
-#desc-content {
-  position: relative;
-  left: 1.6em;
-}*/  
+
+
+  #filter-btns {
+    display: flex;
+    left: 0em;
+  }
+
+  .dropdown {
+    width: 5.8em;
+    margin: 0 auto;
+  }
+
+
+
+  #description {
+    width: 88%;
+    height: 690px;
+  }
+
+  #plane-2 {
+    width: 19.5em;
+    height: 12.5em;
+    left: .5em;
+  }
+
+  #cloud-1 {
+    width: 9em;
+    height: 6.5em;
+    left: 0;
+  }
+
+  #cloud-2 {
+    width: 9em;
+    height: 6.5em;
+    left: 11em;
+    top: 12em;
+  }
+
+  #para-desc-h1 {
+    font-size: 30px;
+    left: 1.3em;
+  }
+
+  #para-desc-p {
+    width: 16em;
+    left: 2.2em;
+    margin-bottom: .2em;
+  }
+
+
+  #brief-rating {
+    width: 88%;
+    border-radius: 10px 150px 10px 150px;
+    height: 700px;
+  }
+
+
+  #partners-hero {
+    width: 95%;
+    height: 400px;
+  }
+
+  #all-partners {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 0px 20px;
+  }
+
+
+  .pre-circ {
+    width: 8em;
+    height: 8em;
+  }
+
+  .pre-circ h1 {
+    font-size: 34px;
+    top: 1.2em;
+  }
+
+  .pre-txt {
+    font-size: 28px;
+  }
+  
+  .years-circ {
+    margin-right: 4em;
+  }
+
+  .years-txt br {
+    display: block;
+  }
+
+
+
+  #newsletter {
+    height: 400px;
+  }
+
+  #sub-container {
+    width: 95%;
+  }
+
+  #sub-container input {
+    width: 65%;
+  }
+
+  #inp-btn {
+    width: 7em;
+    height: 3.7em;
+    font-size: 14px;
+  }
+
+
+
+  .testimonials {
+    height: 470px;
+  }
+  
+  .main-pic {
+    top: 10.8em;
+  }
+
+  .cl-say-h1 {
+    font-size: 28px;
+  } 
+
+  .swiper-button-next {
+    left: 20.5em;
+  }
+
+  .swiper-button-prev {
+    left: 1.2em;
+  }
+
+  .swiper-pagination {
+    margin-bottom: 0px;
+  }
+
+
+  #foo-logo {
+    width: 10em;
+  }
+
+  .closed-cart {
+    right: -140%;
+  }
+
+
+  #collection {
+    left: 2em;
+  }
+
+  #all-h3 {
+    left: 8.3em;
+  }
+
+
+  /* AIRBUS */
+  #air-bo-title {
+    width: 20em;
+  }
+
+  .about-airbo {
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 1fr 1fr;
+    height: 1080px;
+    gap: 15px 0px;
+  }
+
+  .picture-ab-airbo {
+    grid-row: 2/2;
+    height: 200px;
+  }
+
+  .stats-airbo { 
+    grid-row: 3/3;
+  }
+
+  /* PLANE PAGE */
+  
 }

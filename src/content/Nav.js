@@ -13,21 +13,37 @@ export function Nav() {
     const openCart = () => {
         setCartUse(!cartUse);
     }
-
-    window.addEventListener('scroll', () => {
-        const header = document.querySelector('header');
-        const cart = document.getElementById('cart-button');
-        const logo = document.getElementById('logo');
-        const scrollHeight = window.scrollY;
-        header.classList.toggle('sticky', scrollHeight > 0);
-        if (scrollHeight) {
-            cart.style.right = '8em'
-            logo.style.left = '7em';
-        } else {
-            cart.style.right = '2em'
-            logo.style.left = '2em';
-        }
-    })
+    if (window.outerWidth > 768) {
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            const cart = document.getElementById('cart-button');
+            const logo = document.getElementById('logo');
+            const scrollHeight = window.scrollY;
+            header.classList.toggle('sticky', scrollHeight > 0);
+            if (scrollHeight) {
+                cart.style.right = '8em'
+                logo.style.left = '7em';
+            } else {
+                cart.style.right = '2em'
+                logo.style.left = '2em';
+            }
+        })
+    } else if (window.outerWidth <= 768) {
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            const cart = document.getElementById('cart-button');
+            const logo = document.getElementById('logo');
+            const scrollHeight = window.scrollY;
+            header.classList.toggle('sticky', scrollHeight > 0);
+            if (scrollHeight) {
+                cart.style.right = '5.5em'
+                logo.style.left = '4em';
+            } else {
+                cart.style.right = '2em'
+                logo.style.left = '2em';
+            }
+        })
+    }
 
     const navClick = () => {
         const ham = document.getElementById('hamburger');
@@ -69,9 +85,9 @@ export function Nav() {
 
                 <nav id="mobile-nav" onClick={navClick}>
                     <ul id="mobile-nav-links">
-                        <NavLink to={'/'}><li>Home</li></NavLink>
-                        <NavLink to={'/airbus'}><li>Airbus</li></NavLink>
-                        <NavLink to={'/boeing'}><li>Boeing</li></NavLink>
+                        <NavLink to={'/'} className="navLink"><li>Home</li></NavLink>
+                        <NavLink to={'/airbus'} className="navLink"><li>Airbus</li></NavLink>
+                        <NavLink to={'/boeing'} className="navLink"><li>Boeing</li></NavLink>
                     </ul>
                 </nav>
             </header>

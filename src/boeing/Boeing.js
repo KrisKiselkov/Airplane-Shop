@@ -31,10 +31,18 @@ export function Boeing() {
             filteredResult = filteredResult.filter(maker => maker.model === filteredType);
         }
 
-        if (filteredPlanes.length <= 4) {
-            document.getElementById('collection').style.height = 'auto';
+        if (window.outerWidth > 375) {
+            if (filteredPlanes.length <= 4) {
+                document.getElementById('collection').style.height = 'auto';
+            } else {
+                document.getElementById('collection').style.height = '620px';
+            }
         } else {
-            document.getElementById('collection').style.height = '620px';
+            if (filteredPlanes.length <= 4) {
+                document.getElementById('collection').style.height = 'auto';
+            } else {
+                document.getElementById('collection').style.height = '1240px';
+            }
         }
 
 
@@ -82,15 +90,28 @@ export function Boeing() {
         const col = document.getElementById('collection');
 
         const overflow = () => {
-            if (filteredPlanes.length > 4) {
-                if (col.style.height === '620px') {
-                    col.style.height = 'auto';
-                    h.innerHTML = 'See Less';
-                } else {
-                    col.style.height = '620px';
-                    h.innerHTML = 'See All';
+            if (window.outerWidth > 375) {
+                if (filteredPlanes.length > 4) {
+                    if (col.style.height === '620px') {
+                        col.style.height = 'auto';
+                        h.innerHTML = 'See Less';
+                    } else {
+                        col.style.height = '620px';
+                        h.innerHTML = 'See All';
+                    }
+                }
+            } else {
+                if (filteredPlanes.length > 4) {
+                    if (col.style.height === '1240px') {
+                        col.style.height = 'auto';
+                        h.innerHTML = 'See Less';
+                    } else {
+                        col.style.height = '1240px';
+                        h.innerHTML = 'See All';
+                    }
                 }
             }
+            
         }
 
         h.addEventListener('click', overflow);

@@ -33,10 +33,18 @@ export function Planes() {
             filteredResult = planesObject;
         }
 
-        if (filteredPlanes.length <= 8) {
-            document.getElementById('collection').style.height = 'auto';
+        if (window.outerWidth > 375) {
+            if (filteredPlanes.length <= 8) {
+                document.getElementById('collection').style.height = 'auto';
+            } else {
+                document.getElementById('collection').style.height = '620px';
+            }
         } else {
-            document.getElementById('collection').style.height = '620px';
+            if (filteredPlanes.length <= 8) {
+                document.getElementById('collection').style.height = 'auto';
+            } else {
+                document.getElementById('collection').style.height = '1240px';
+            }
         }
 
         setFilteredPlanes(filteredResult);
@@ -88,13 +96,25 @@ export function Planes() {
         const col = document.getElementById('collection');
 
         const overflow = () => {
-            if (filteredPlanes.length > 8) {
-                if (col.style.height === '620px') {
-                    col.style.height = 'auto';
-                    h.innerHTML = 'See Less';
-                } else {
-                    col.style.height = '620px';
-                    h.innerHTML = 'See All';
+            if (window.outerWidth > 375) {
+                if (filteredPlanes.length > 8) {
+                    if (col.style.height === '620px') {
+                        col.style.height = 'auto';
+                        h.innerHTML = 'See Less';
+                    } else {
+                        col.style.height = '620px';
+                        h.innerHTML = 'See All';
+                    }
+                }
+            } else {
+                if (filteredPlanes.length > 8) {
+                    if (col.style.height === '1240px') {
+                        col.style.height = 'auto';
+                        h.innerHTML = 'See Less';
+                    } else {
+                        col.style.height = '1240px';
+                        h.innerHTML = 'See All';
+                    }
                 }
             }
         }

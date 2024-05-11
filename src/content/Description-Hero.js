@@ -63,7 +63,7 @@ export function DescriptionHero() {
 
                 <div className='pre-div'>
                     <div className='pre-circ years-circ'><h1>11+</h1></div>
-                    <div className='pre-txt years-txt'>Years of Experince</div>
+                    <div className='pre-txt years-txt'>Years of <br></br>Experince</div>
                 </div>
             </section>
 
