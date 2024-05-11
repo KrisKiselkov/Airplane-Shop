@@ -1913,5 +1913,25 @@ footer {
   }
 
   /* PLANE PAGE */
-  
+  #plane-page {
+    height: 950px;
+  }
+
+  #image-container {
+    height: 260px;
+  }
+
+  #plane-page-img {
+    width: 95%;
+    left: 0em;
+  }
+
+  #description-container {
+    height: 600px;
+  }
+
+  .plane-btn {
+    top: 1.6em;
+    left: 3.9em;
+  }
 }
